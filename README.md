@@ -72,6 +72,35 @@ Memory addresses that house various values I've managed to find.
 | 007B37B8              | Stat weighting
 | 007B37BC              | Equipped outfit
 
+#### Zhou Yu
+| Address               | Desc                  
+| -------------------   |----------------------    
+| 007B39C0              | XP
+| 007B39B8              | Officer title
+| 007B39BC              | Level
+| 007B39B0              | Stat weighting
+| 007B39B4              | Equipped outfit
+
+#### Lu Xun
+| Address               | Desc                  
+| -------------------   |----------------------    
+| 007B3A68              | XP
+| 007B3A6C              | Kills
+| 007B3A60              | Officer title
+| 007B3A64              | Level
+| 007B3A58              | Stat weighting
+| 007B3A5C              | Equipped outfit
+
+#### Sun Shang Xiang
+| Address               | Desc                  
+| -------------------   |----------------------    
+| 007B3B10              | XP
+| 007B3B14              | Kills
+| 007B3B08              | Officer title
+| 007B3B0C              | Level
+| 007B3B00              | Stat weighting
+| 007B3B04              | Equipped outfit
+
 
 
 
