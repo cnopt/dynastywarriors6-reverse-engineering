@@ -11,7 +11,6 @@ Memory addresses that house various values I've managed to find.
 | 007B2958              | Current highest chain
 | 007B2944              | Current XP gained from pouches
 | 007B2948              | Current XP gained from kills
----
 
 ### Officer stat locations
 
@@ -33,5 +32,46 @@ Memory addresses that house various values I've managed to find.
 | 007B3DAC              | Level
 | 007B3DA0              | Stat weighting
 | 007B3DA4              | Equipped outfit
+
+#### Zhang Fei
+| Address               | Desc                  
+| -------------------   |----------------------    
+| 007B3E58              | XP
+| 007B3E5C              | Kills
+| 007B3E50              | Officer title
+| 007B3E54              | Level
+| 007B3E48              | Stat weighting
+| 007B3E4C              | Equipped outfit
+
+#### Xiahou Dun
+| Address               | Desc                  
+| -------------------   |----------------------    
+| 007B3678              | XP
+| 007B3670              | Officer title
+| 007B3674              | Level
+| 007B3668              | Stat weighting
+| 007B366C              | Equipped outfit
+
+#### Dian Wei
+| Address               | Desc                  
+| -------------------   |----------------------    
+| 007B3720              | XP
+| 007B3724              | Kills
+| 007B3718              | Officer title
+| 007B371C              | Level
+| 007B3710              | Stat weighting
+| 007B3714              | Equipped outfit
+
+#### Sima Yi
+| Address               | Desc                  
+| -------------------   |----------------------    
+| 007B37C8              | XP
+| 007B37CC              | Kills
+| 007B37C0              | Officer title
+| 007B37C4              | Level
+| 007B37B8              | Stat weighting
+| 007B37BC              | Equipped outfit
+
+
 
 
