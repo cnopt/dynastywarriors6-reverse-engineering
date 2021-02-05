@@ -1,0 +1,7 @@
+D:\Users\Charlie\Documents\DW6 Reverse Engineering\Save-parser\save-parser\save-parser\bin\Debug\save-parser.exe.config
+D:\Users\Charlie\Documents\DW6 Reverse Engineering\Save-parser\save-parser\save-parser\bin\Debug\save-parser.exe
+D:\Users\Charlie\Documents\DW6 Reverse Engineering\Save-parser\save-parser\save-parser\bin\Debug\save-parser.pdb
+D:\Users\Charlie\Documents\DW6 Reverse Engineering\Save-parser\save-parser\save-parser\obj\Debug\save-parser.csprojAssemblyReference.cache
+D:\Users\Charlie\Documents\DW6 Reverse Engineering\Save-parser\save-parser\save-parser\obj\Debug\save-parser.csproj.CoreCompileInputs.cache
+D:\Users\Charlie\Documents\DW6 Reverse Engineering\Save-parser\save-parser\save-parser\obj\Debug\save-parser.exe
+D:\Users\Charlie\Documents\DW6 Reverse Engineering\Save-parser\save-parser\save-parser\obj\Debug\save-parser.pdb
