@@ -7,8 +7,11 @@ using System.IO;
 using System.Buffers.Binary;
 
 class Program
+
 {
-    static void Main(string[] args)
+    
+
+    static void Main()
     {
         R();
     }
@@ -16,7 +19,7 @@ class Program
     static void R()
     {
         string file = @"C:\Users\TTGCh\Desktop\dw6-saves\new-save.dat";
-        int numBytes = 2;
+        int numBytes = 4;
         byte[] test = new byte[numBytes];
 
         // To read data at specific byte: Address = Seek offset + number of bytes
@@ -29,15 +32,44 @@ class Program
         // reserved the endianness WHILE ALSO reading it as an int16 gave out -26330, which is
         // 9981 in big endian. so i reversed and back and bam, 9881 returned
 
+
         using (BinaryReader reader = new BinaryReader(new FileStream(file, FileMode.Open)))
         {
-            reader.BaseStream.Seek(4738, SeekOrigin.Begin); // where to start reading from 
-            reader.Read(test, 0, numBytes); // number of bytes to read
-            var val1 = reader.ReadInt16();
+            reader.BaseStream.Seek(4736, SeekOrigin.Begin);     // where to start reading from 
+            reader.Read(test, 0, 4);                            // number of bytes to read
+            int zhaoYunKillsVal = reader.ReadInt32(); // this has two extra bytes of 0's so might be stored as an int32 to allow for huge values
 
- 
+            reader.BaseStream.Seek(4732, SeekOrigin.Begin);
+            reader.Read(test, 0, 4);
+            int zhaoYunXP = reader.ReadInt32(); // also a 32bit int
 
-            Console.WriteLine(val1);
+            reader.BaseStream.Seek(4726, SeekOrigin.Begin);
+            reader.Read(test, 0, 2);
+            int zhaoYunTitle = reader.ReadInt16();
+
+            reader.BaseStream.Seek(4730, SeekOrigin.Begin);
+            reader.Read(test, 0, 2);
+            int zhaoYunLevel = reader.ReadInt16();
+
+            // offset between XP = 168????
+            reader.BaseStream.Seek(4900, SeekOrigin.Begin);
+            reader.Read(test, 0, 4);
+            int guanYuXP = reader.ReadInt32();
+
+            // 5068 = next officer xp??
+            reader.BaseStream.Seek(5068, SeekOrigin.Begin);
+            reader.Read(test, 0, 4);
+            int zhangFeiXP = reader.ReadInt32();
+            Console.WriteLine(zhangFeiXP);
+
+            reader.BaseStream.Seek(5236, SeekOrigin.Begin);
+            reader.Read(test, 0, 4);
+            int zhugeLiangXP = reader.ReadInt32();
+            Console.WriteLine(zhugeLiangXP);
+
+
+
+            
         }
 
         // read all
@@ -48,7 +80,7 @@ class Program
         //for (int i = 0; (hexIn = fs.ReadByte()) != -1; i++)
         //{
         //    hex = string.Format("{0:X2}", hexIn);
-        //    Console.Write(hex);
+        //    Console.Write(hex);   
         //}
 
 
