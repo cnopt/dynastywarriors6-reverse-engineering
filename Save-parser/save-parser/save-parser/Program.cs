@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Buffers.Binary;
 
 class Program
 {
@@ -15,7 +16,7 @@ class Program
     static void R()
     {
         string file = @"C:\Users\TTGCh\Desktop\dw6-saves\new-save.dat";
-        int numBytes = 1;
+        int numBytes = 2;
         byte[] test = new byte[numBytes];
 
         // To read data at specific byte: Address = Seek offset + number of bytes
@@ -24,16 +25,13 @@ class Program
 
         using (BinaryReader reader = new BinaryReader(new FileStream(file, FileMode.Open)))
         {
-            reader.BaseStream.Seek(99, SeekOrigin.Begin); // where to start reading from 
+            reader.BaseStream.Seek(4738, SeekOrigin.Begin); // where to start reading from 
             reader.Read(test, 0, numBytes); // number of bytes to read
-            var val1 = reader.Read();
+            var val1 = Decimal.ToInt32(reader.Read());
 
-            reader.BaseStream.Seek(103, SeekOrigin.Begin); // where to start reading from 
-            reader.Read(test, 0, numBytes); // number of bytes to read
-            var val2 = reader.Read();
+ 
 
             Console.WriteLine(val1);
-            Console.WriteLine(val2);
         }
 
         // read all

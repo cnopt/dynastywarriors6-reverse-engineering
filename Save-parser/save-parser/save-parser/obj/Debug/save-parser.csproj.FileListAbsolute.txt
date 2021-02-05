@@ -5,3 +5,12 @@ D:\Users\Charlie\Documents\DW6 Reverse Engineering\Save-parser\save-parser\save-
 D:\Users\Charlie\Documents\DW6 Reverse Engineering\Save-parser\save-parser\save-parser\obj\Debug\save-parser.csproj.CoreCompileInputs.cache
 D:\Users\Charlie\Documents\DW6 Reverse Engineering\Save-parser\save-parser\save-parser\obj\Debug\save-parser.exe
 D:\Users\Charlie\Documents\DW6 Reverse Engineering\Save-parser\save-parser\save-parser\obj\Debug\save-parser.pdb
+D:\Users\Charlie\Documents\DW6 Reverse Engineering\Save-parser\save-parser\save-parser\bin\Debug\System.Buffers.dll
+D:\Users\Charlie\Documents\DW6 Reverse Engineering\Save-parser\save-parser\save-parser\bin\Debug\System.Memory.dll
+D:\Users\Charlie\Documents\DW6 Reverse Engineering\Save-parser\save-parser\save-parser\bin\Debug\System.Numerics.Vectors.dll
+D:\Users\Charlie\Documents\DW6 Reverse Engineering\Save-parser\save-parser\save-parser\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Users\Charlie\Documents\DW6 Reverse Engineering\Save-parser\save-parser\save-parser\bin\Debug\System.Buffers.xml
+D:\Users\Charlie\Documents\DW6 Reverse Engineering\Save-parser\save-parser\save-parser\bin\Debug\System.Memory.xml
+D:\Users\Charlie\Documents\DW6 Reverse Engineering\Save-parser\save-parser\save-parser\bin\Debug\System.Numerics.Vectors.xml
+D:\Users\Charlie\Documents\DW6 Reverse Engineering\Save-parser\save-parser\save-parser\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Users\Charlie\Documents\DW6 Reverse Engineering\Save-parser\save-parser\save-parser\obj\Debug\save-parser.csproj.CopyComplete
