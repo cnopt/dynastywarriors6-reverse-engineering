@@ -101,6 +101,19 @@ Memory addresses that house various values I've managed to find.
 | 007B3B00              | Stat weighting
 | 007B3B04              | Equipped outfit
 
+### Officer titles
+Officer's titles seem to be linked to their Level, however editing their Level in-memory does not seem to alter their title,
+or vice versa. 
+Changing their XP to over the required value doesn't level them up until getting a kill in-game.
+Changing their level in-memory does result in their stats being altered according to the `weighting` of the character - another stat that the game keeps track of.
+Changing the `weighting` in-memory does result in a live update of their stats.
+
+| Title value			| Text
+| ------------------	| -----------------
+`00`					| `Lt. General`
+
+
+
 
 
 
