@@ -110,161 +110,161 @@ Changing the `weighting` in-memory does result in a live update of their stats.
 
 | Title value			| Text
 | ------------------	| -----------------
-`00`					| `Lt. General`
-`01`					| `Assistant General`
-`02`					| `Field General`
-`03`					| `Gate General`
-`04`					| `4th Foot General`
-`05`					| `3rd Foot General`
-`06`					| `Lt. Foot General`
-`07`					| `Foot General`
-`08`					| `4th Crusher General`
-`09`					| `3rd Crusher General`
-`10`					| `Lt. Crusher General`
-`11`					| `Crusher General`
-`12`					| `4th Guard General`
-`13`					| `3rd Guard General`
-`14`					| `Lt. Guard General`
-`15`					| `Guard General`
-`16`					| `Winged General`
-`17`					| `Flying General`
-`18`					| `Lt. Support General`
-`19`					| `Support General`
-`20`					| `4th Order General`
-`21`					| `3rd Order General`
-`22`					| `Lt. Order General`
-`23`					| `Order General`
-`24`					| `4th Slashing General`
-`25`					| `3rd Slashing General`
-`26`					| `Lt. Slashing General`
-`27`					| `Slashing General`
-`28`					| `4th Pacifying General`
-`29`					| `3rd Pacifying General`
-`30`					| `Lt. Pacifying General`
-`31`					| `Pacifying General`
-`32`					| `4th Pike General`
-`33`					| `3rd Pike General`
-`34`					| `Pike General`
-`35`					| `4th Dignified General`
-`36`					| `3rd Dignified General`
-`37`					| `Lt. Dignified General`
-`38`					| `Dignified General`
-`39`					| `4th Dispatch General`
-`40`					| `3rd Dispatch General`
-`41`					| `Lt. Dispatch General`
-`42`					| `Dispatch General`
-`43`					| `4th Cohort General`
-`44`					| `3rd Cohort General`
-`45`					| `Lt. Cohort General`
-`46`					| `Cohort General`
-`47`					| `Commander General`
-`48`					| `Restoring General`
-`49`					| `4th Justice General`
-`50`					| `3rd Justice General`
-`51`					| `Tower General`
-`52`					| `River General`
-`53`					| `Sea General`
-`54`					| `Plains General`
-`55`					| `Lt. Justice General`
-`56`					| `Justice General`
-`57`					| `Lt. Moral General`
-`58`					| `Moral General`
-`59`					| `4th Loyal General`
-`60`					| `3rd Loyal General`
-`61`					| `Lt. Loyal General`
-`62`					| `Loyal General`
-`63`					| `4th Trusted General`
-`64`					| `3rd Trusted General`
-`65`					| `Lt. Trusted General`
-`66`					| `Trusted General`
-`67`					| `4th Spear General`
-`68`					| `3rd Spear General`
-`69`					| `Lt. Spear General`
-`70`					| `Spear General`
-`71`					| `4th Resolute General`
-`72`					| `3rd Resolute General`
-`73`					| `3rd Resolute General`
-`74`					| `Lt. Resolute General`
-`75`					| `Resolute General`
-`76`					| `4th Enchanter General`
-`77`					| `3rd Enchanter General`
-`78`					| `Lt. Enchanter General`
-`79`					| `Enchanter General`
-`80`					| `4th Assault General`
-`81`					| `3rd Assault General`
-`82`					| `Lt. Assault General`
-`83`					| `Assault General`
-`84`					| `4th Tiger General`
-`85`					| `3rd Tiger General`
-`86`					| `Lt. Tiger General`
-`87`					| `Tiger General`
-`88`					| `Negotiator General`
-`89`					| `Generous General`
-`90`					| `Right Flank General`
-`91`					| `Ambush General`
-`92`					| `Archer General`
-`93`					| `Lt. Crossbow General`
-`94`					| `Crossbow General`
-`95`					| `Left Flank General`
-`96`					| `Lt. Rank General`
-`97`					| `Rank General`
-`98`					| `Lt. File General`
-`99`					| `File General`
-`100`					| `Lt. Horse General`
-`101`					| `Horse General`
-`102`					| `Lt. Banner General`
-`103`					| `Banner General`
-`104`					| `Lt. Lance General`
-`105`					| `Lance General`
-`106`					| `Sword General`
-`107`					| `Guardian General`
-`108`					| `Crane General`
-`109`					| `Stallion General`
-`110`					| `Garrison General`
-`111`					| `Escort General`
-`112`					| `Commandant General`
-`113`					| `Warden General`
-`114`					| `Distinguished General`
-`115`					| `Capital General`
-`116`					| `Tiger's Fangs General`
-`117`					| `Rising Dragon General`
-`118`					| `4th Tranquil General`
-`119`					| `3rd Tranquil General`
-`120`					| `3rd Tranquil General`
-`121`					| `Tranquil General`
-`122`					| `Peacemaker General`
-`123`					| `Peacekeeper General`
-`124`					| `Crown General`
-`125`					| `4th Elite General`
-`126`					| `3rd Elite General`
-`127`					| `Lt. Elite General`
-`128`					| `Elite General`
-`129`					| `Master General`
-`130`					| `Rear General`
-`131`					| `Front General`
-`132`					| `General of the Right`
-`133`					| `General of the Left`
-`134`					| `4th North General`
-`135`					| `4th West General`
-`136`					| `4th South General`
-`137`					| `4th East General`
-`138`					| `3rd North General`
-`139`					| `3rd West General`
-`140`					| `3rd South General`
-`141`					| `3rd East General`
-`142`					| `Lt. North General`
-`143`					| `Lt. West General`
-`144`					| `Lt. South General`
-`145`					| `Lt. East General`
-`146`					| `North General`
-`147`					| `West General`
-`148`					| `South General`
-`149`					| `East General`
-`150`					| `Perimeter General`
-`151`					| `Chariot General`
-`152`					| `Cavalier General`
-`153`					| `Grand General`
-`154`					| `Lord General`
+`00`					| Lt. General
+`01`					| Assistant General
+`02`					| Field General
+`03`					| Gate General
+`04`					| 4th Foot General
+`05`					| 3rd Foot General
+`06`					| Lt. Foot General
+`07`					| Foot General
+`08`					| 4th Crusher General
+`09`					| 3rd Crusher General
+`10`					| Lt. Crusher General
+`11`					| Crusher General
+`12`					| 4th Guard General
+`13`					| 3rd Guard General
+`14`					| Lt. Guard General
+`15`					| Guard General
+`16`					| Winged General
+`17`					| Flying General
+`18`					| Lt. Support General
+`19`					| Support General
+`20`					| 4th Order General
+`21`					| 3rd Order General
+`22`					| Lt. Order General
+`23`					| Order General
+`24`					| 4th Slashing General
+`25`					| 3rd Slashing General
+`26`					| Lt. Slashing General
+`27`					| Slashing General
+`28`					| 4th Pacifying General
+`29`					| 3rd Pacifying General
+`30`					| Lt. Pacifying General
+`31`					| Pacifying General
+`32`					| 4th Pike General
+`33`					| 3rd Pike General
+`34`					| Pike General
+`35`					| 4th Dignified General
+`36`					| 3rd Dignified General
+`37`					| Lt. Dignified General
+`38`					| Dignified General
+`39`					| 4th Dispatch General
+`40`					| 3rd Dispatch General
+`41`					| Lt. Dispatch General
+`42`					| Dispatch General
+`43`					| 4th Cohort General
+`44`					| 3rd Cohort General
+`45`					| Lt. Cohort General
+`46`					| Cohort General
+`47`					| Commander General
+`48`					| Restoring General
+`49`					| 4th Justice General
+`50`					| 3rd Justice General
+`51`					| Tower General
+`52`					| River General
+`53`					| Sea General
+`54`					| Plains General
+`55`					| Lt. Justice General
+`56`					| Justice General
+`57`					| Lt. Moral General
+`58`					| Moral General
+`59`					| 4th Loyal General
+`60`					| 3rd Loyal General
+`61`					| Lt. Loyal General
+`62`					| Loyal General
+`63`					| 4th Trusted General
+`64`					| 3rd Trusted General
+`65`					| Lt. Trusted General
+`66`					| Trusted General
+`67`					| 4th Spear General
+`68`					| 3rd Spear General
+`69`					| Lt. Spear General
+`70`					| Spear General
+`71`					| 4th Resolute General
+`72`					| 3rd Resolute General
+`73`					| 3rd Resolute General
+`74`					| Lt. Resolute General
+`75`					| Resolute General
+`76`					| 4th Enchanter General
+`77`					| 3rd Enchanter General
+`78`					| Lt. Enchanter General
+`79`					| Enchanter General
+`80`					| 4th Assault General
+`81`					| 3rd Assault General
+`82`					| Lt. Assault General
+`83`					| Assault General
+`84`					| 4th Tiger General
+`85`					| 3rd Tiger General
+`86`					| Lt. Tiger General
+`87`					| Tiger General
+`88`					| Negotiator General
+`89`					| Generous General
+`90`					| Right Flank General
+`91`					| Ambush General
+`92`					| Archer General
+`93`					| Lt. Crossbow General
+`94`					| Crossbow General
+`95`					| Left Flank General
+`96`					| Lt. Rank General
+`97`					| Rank General
+`98`					| Lt. File General
+`99`					| File General
+`100`					| Lt. Horse General
+`101`					| Horse General
+`102`					| Lt. Banner General
+`103`					| Banner General
+`104`					| Lt. Lance General
+`105`					| Lance General
+`106`					| Sword General
+`107`					| Guardian General
+`108`					| Crane General
+`109`					| Stallion General
+`110`					| Garrison General
+`111`					| Escort General
+`112`					| Commandant General
+`113`					| Warden General
+`114`					| Distinguished General
+`115`					| Capital General
+`116`					| Tiger's Fangs General
+`117`					| Rising Dragon General
+`118`					| 4th Tranquil General
+`119`					| 3rd Tranquil General
+`120`					| 3rd Tranquil General
+`121`					| Tranquil General
+`122`					| Peacemaker General
+`123`					| Peacekeeper General
+`124`					| Crown General
+`125`					| 4th Elite General
+`126`					| 3rd Elite General
+`127`					| Lt. Elite General
+`128`					| Elite General
+`129`					| Master General
+`130`					| Rear General
+`131`					| Front General
+`132`					| General of the Right
+`133`					| General of the Left
+`134`					| 4th North General
+`135`					| 4th West General
+`136`					| 4th South General
+`137`					| 4th East General
+`138`					| 3rd North General
+`139`					| 3rd West General
+`140`					| 3rd South General
+`141`					| 3rd East General
+`142`					| Lt. North General
+`143`					| Lt. West General
+`144`					| Lt. South General
+`145`					| Lt. East General
+`146`					| North General
+`147`					| West General
+`148`					| South General
+`149`					| East General
+`150`					| Perimeter General
+`151`					| Chariot General
+`152`					| Cavalier General
+`153`					| Grand General
+`154`					| Lord General
 
 
 
