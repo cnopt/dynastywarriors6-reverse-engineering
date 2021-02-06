@@ -18,10 +18,6 @@ class Program
 
     static void R()
     {
-        string file = @"C:\Users\TTGCh\Desktop\dw6-saves\new-save.dat";
-        int numBytes = 4;
-        byte[] test = new byte[numBytes];
-
         // To read data at specific byte: Address = Seek offset + number of bytes
         // i.e. to get data at offset 100 = Seek offset 99, as number of bytes is set to 1
         // if changing the size of bytes, adjust offset up or down
@@ -33,12 +29,18 @@ class Program
         // 9981 in big endian. so i reversed and back and bam, 9881 returned
         // seems like officer XP could start at index 3052. previously it was around 4700
         // as i thought it started at zhao yun, but looks like it might start with the Wei officers
+        // playable officers = 41, officer stat block = 168 bytes, 168*41 = 6888
+
+
+        string file = @"C:\Users\TTGCh\Desktop\dw6-saves\new-save.dat";
+        int numBytes = 4;
+        byte[] test = new byte[numBytes];
 
 
         using (BinaryReader reader = new BinaryReader(new FileStream(file, FileMode.Open)))
         {
             int baseStart = 3052;
-            for (int i = 0; i < 10000; i++)
+            for (int i = 0; i < 6888; i++)
             {
                 reader.BaseStream.Seek(baseStart+i, SeekOrigin.Begin);
                 reader.Read(test, 0, 4);
