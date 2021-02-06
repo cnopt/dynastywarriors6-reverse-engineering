@@ -31,10 +31,22 @@ class Program
         // tried converting to int16/int32 AFTER read(), was still giving the same result. 
         // reserved the endianness WHILE ALSO reading it as an int16 gave out -26330, which is
         // 9981 in big endian. so i reversed and back and bam, 9881 returned
+        // seems like officer XP could start at index 3052. previously it was around 4700
+        // as i thought it started at zhao yun, but looks like it might start with the Wei officers
 
 
         using (BinaryReader reader = new BinaryReader(new FileStream(file, FileMode.Open)))
         {
+            int baseStart = 3052;
+            for (int i = 0; i < 10000; i++)
+            {
+                reader.BaseStream.Seek(baseStart+i, SeekOrigin.Begin);
+                reader.Read(test, 0, 4);
+                Console.WriteLine(reader.ReadInt32());
+                i = i + 167;
+            }
+
+            /*
             reader.BaseStream.Seek(4736, SeekOrigin.Begin);     // where to start reading from 
             reader.Read(test, 0, 4);                            // number of bytes to read
             int zhaoYunKillsVal = reader.ReadInt32(); // this has two extra bytes of 0's so might be stored as an int32 to allow for huge values
@@ -60,12 +72,13 @@ class Program
             reader.BaseStream.Seek(5068, SeekOrigin.Begin);
             reader.Read(test, 0, 4);
             int zhangFeiXP = reader.ReadInt32();
-            Console.WriteLine(zhangFeiXP);
+        
 
             reader.BaseStream.Seek(5236, SeekOrigin.Begin);
             reader.Read(test, 0, 4);
             int zhugeLiangXP = reader.ReadInt32();
-            Console.WriteLine(zhugeLiangXP);
+            */
+       
 
 
 
