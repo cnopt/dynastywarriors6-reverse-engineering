@@ -202,66 +202,69 @@ Changing the `weighting` in-memory does result in a live update of their stats.
 `89`					| `Generous General`
 `90`					| `Right Flank General`
 `91`					| `Ambush General`
-`06`					| `Archer General`
-`06`					| `Lt. Crossbow General`
-`06`					| `Crossbow General`
-`06`					| `Left Flank General`
-`06`					| `Lt. Rank General`
-`06`					| `Rank General`
-`06`					| `Lt. File General`
-`06`					| `File General`
-`06`					| `Lt. Horse General`
-`06`					| `Horse General`
-`06`					| `Lt. Banner General`
-`06`					| `Banner General`
-`06`					| `Lt. Lance General`
-`06`					| `Lance General`
-`06`					| `Sword General`
-`06`					| `Guardian General`
-`06`					| `Crane General`
-`06`					| `Stallion General`
-`06`					| `Garrison General`
-`06`					| `Escort General`
-`06`					| `Commandant General`
-`06`					| `Warden General`
-`06`					| `Distinguished General`
-`06`					| `Capital General`
-`06`					| `Tiger's Fangs General`
-`06`					| `Rising Dragon General`
-`06`					| `4th Tranquil General`
-`06`					| `3rd Tranquil General`
-`06`					| `3rd Tranquil General`
-`06`					| `Tranquil General`
-`06`					| `Peacemaker General`
-`06`					| `Peacekeeper General`
-`06`					| `Crown General`
-`06`					| `4th Elite General`
-`06`					| `3rd Elite General`
-`06`					| `Lt. Elite General`
-`06`					| `Elite General`
-`06`					| `Master General`
-`06`					| `Rear General`
-`06`					| `Front General`
-`06`					| `General of the Right`
-`06`					| `General of the Left`
-`06`					| `4th North General`
-`06`					| `4th West General`
-`06`					| `3rd North General`
-`06`					| `3rd South General`
-`06`					| `3rd East General`
-`06`					| `Lt. North General`
-`06`					| `Lt. West General`
-`06`					| `Lt. South General`
-`06`					| `Lt. East General`
-`06`					| `North General`
-`06`					| `West General`
-`06`					| `East General`
-`06`					| `Perimeter General`
-`06`					| `Chariot General`
-`06`					| `Cavalier General`
-`06`					| `Grand General`
-`06`					| `Lord General`
-`06`					| `Lord General`
+`92`					| `Archer General`
+`93`					| `Lt. Crossbow General`
+`94`					| `Crossbow General`
+`95`					| `Left Flank General`
+`96`					| `Lt. Rank General`
+`97`					| `Rank General`
+`98`					| `Lt. File General`
+`99`					| `File General`
+`100`					| `Lt. Horse General`
+`101`					| `Horse General`
+`102`					| `Lt. Banner General`
+`103`					| `Banner General`
+`104`					| `Lt. Lance General`
+`105`					| `Lance General`
+`106`					| `Sword General`
+`107`					| `Guardian General`
+`108`					| `Crane General`
+`109`					| `Stallion General`
+`110`					| `Garrison General`
+`111`					| `Escort General`
+`112`					| `Commandant General`
+`113`					| `Warden General`
+`114`					| `Distinguished General`
+`115`					| `Capital General`
+`116`					| `Tiger's Fangs General`
+`117`					| `Rising Dragon General`
+`118`					| `4th Tranquil General`
+`119`					| `3rd Tranquil General`
+`120`					| `3rd Tranquil General`
+`121`					| `Tranquil General`
+`122`					| `Peacemaker General`
+`123`					| `Peacekeeper General`
+`124`					| `Crown General`
+`125`					| `4th Elite General`
+`126`					| `3rd Elite General`
+`127`					| `Lt. Elite General`
+`128`					| `Elite General`
+`129`					| `Master General`
+`130`					| `Rear General`
+`131`					| `Front General`
+`132`					| `General of the Right`
+`133`					| `General of the Left`
+`134`					| `4th North General`
+`135`					| `4th West General`
+`136`					| `4th South General`
+`137`					| `4th East General`
+`138`					| `3rd North General`
+`139`					| `3rd West General`
+`140`					| `3rd South General`
+`141`					| `3rd East General`
+`142`					| `Lt. North General`
+`143`					| `Lt. West General`
+`144`					| `Lt. South General`
+`145`					| `Lt. East General`
+`146`					| `North General`
+`147`					| `West General`
+`148`					| `South General`
+`149`					| `East General`
+`150`					| `Perimeter General`
+`151`					| `Chariot General`
+`152`					| `Cavalier General`
+`153`					| `Grand General`
+`154`					| `Lord General`
 
 
 
