@@ -103,10 +103,9 @@ Memory addresses that house various values I've managed to find.
 
 ### Officer titles
 Officer's titles seem to be linked to their Level, however editing their Level in-memory does not seem to alter their title,
-or vice versa. 
+or vice versa. Theres also a total of 154 titles, whereas an officer's max level is 99, so there may be multiple factors.
 Changing their XP to over the required value doesn't level them up until getting a kill in-game.
 Changing their level in-memory does result in their stats being altered according to the `weighting` of the character - another stat that the game keeps track of.
-Changing the `weighting` in-memory does result in a live update of their stats.
 
 | Title value			| Text
 | ------------------	| -----------------
@@ -268,9 +267,25 @@ Changing the `weighting` in-memory does result in a live update of their stats.
 
 ### Stat weighting
 
-| Value				| Weights
-| ----------		| ----------
-| 00	|	<p> 0.24 Life <br> 0.24 Musuo <p> 0.24 Attack <br> <p> 0.25 Defense <br> </p>
+This value affects the distribution of the officer's stats: `Life`, `Musuo`, `Attack`, and `Defense`. Strangley it also affects the total
+XP used to distribute these values, i.e. a value of `05` gives a total of 1,079 points to distibute between these four stats, whereas a value of
+`12` gives 1,105. This value was tested using a base level 1 Zhuge Liang.
+
+| Value	| Weights
+| ----	| ----------
+| 00	|	<p> **1,105 Points** <br> 0.24 Life <br> 0.24 Musuo <br> 0.24 Attack <br> 0.25 Defense </p>
+| 01	|	<p> **1,111 Points** <br> 0.25 Life <br> 0.22 Musuo <br> 0.25 Attack <br> 0.25 Defense </p>
+| 02	|	<p> **1,056 Points** <br> 0.24 Life <br> 0.28 Musuo <br> 0.23 Attack <br> 0.24 Defense </p>
+| 03	|	<p> **1,103 Points** <br> 0.24 Life <br> 0.24 Musuo <br> 0.24 Attack <br> 0.26 Defense </p>
+| 04	|	<p> **1,073 Points** <br> 0.24 Life <br> 0.26 Musuo <br> 0.24 Attack <br> 0.24 Defense </p>
+| 05	|	<p> **1,079 Points** <br> 0.24 Life <br> 0.26 Musuo <br> 0.24 Attack <br> 0.24 Defense </p>
+| 06	|	<p> **1,059 Points** <br> 0.24 Life <br> 0.27 Musuo <br> 0.24 Attack <br> 0.24 Defense </p>
+| 07	|	<p> **1,018 Points** <br> 0.23 Life <br> 0.27 Musuo <br> 0.24 Attack <br> 0.24 Defense </p>
+| 08	|	<p> **1,093 Points** <br> 0.24 Life <br> 0.24 Musuo <br> 0.26 Attack <br> 0.24 Defense </p>
+| 09	|	<p> **1,090 Points** <br> 0.23 Life <br> 0.23 Musuo <br> 0.25 Attack <br> 0.26 Defense </p>
+| 10	|	<p> **1,119 Points** <br> 0.24 Life <br> 0.24 Musuo <br> 0.24 Attack <br> 0.25 Defense </p>
+| 11	|	<p> **1,119 Points** <br> 0.25 Life <br> 0.23 Musuo <br> 0.26 Attack <br> 0.25 Defense </p>
+| 12	|	<p> **1,105 Points** <br> 0.25 Life <br> 0.22 Musuo <br> 0.26 Attack <br> 0.24 Defense </p>
 
 
 
