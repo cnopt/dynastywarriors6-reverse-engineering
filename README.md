@@ -103,7 +103,9 @@ Memory addresses that house various values I've managed to find.
 
 ### Officer titles
 Officer's titles seem to be linked to their Level, however editing their Level in-memory does not seem to alter their title,
-or vice versa. Theres also a total of 154 titles, whereas an officer's max level is 99, so there may be multiple factors.
+or vice versa. Theres also a total of 154 titles, whereas an officer's max level is 50, so there may be multiple factors.
+This title does not seem to be linked to kills, either. Maybe there's 3 different titles for each level?
+
 Changing their XP to over the required value doesn't level them up until getting a kill in-game.
 Changing their level in-memory does result in their stats being altered according to the `weighting` of the character - another stat that the game keeps track of.
 
@@ -265,9 +267,19 @@ Changing their level in-memory does result in their stats being altered accordin
 `153`					| Grand General
 `154`					| Lord General
 
+#### Title tracking
+
+Tracking two different officer's titles as they level up. Both started at level 1. 
+
+| Officer	| Lvl 3					| Lvl 4				| Lvl 5						| Lvl 6						| Lvl 7
+| -----		| -----					| -----				| -----						| -----						| -----
+Yuan Shao	| `02` Field General	| `03` Gate General	| `06` Lt. Foot General		| `08` 4th Crusher General	| `13` 3rd Guard General
+Guan Ping	| `02` Field General	| `03` Gate General	| `10` Lt. Crusher General	| `13` 3rd Guard General	| `14` Lt. Guard General
+
+
 ### Stat weighting
 
-This value affects the distribution of the officer's stats: `Life`, `Musuo`, `Attack`, and `Defense`. Strangley it also affects the total
+This value affects the distribution of the officer's stats: `Life`, `Musou`, `Attack`, and `Defense`. Strangley it also affects the total
 points used to distribute these values, i.e. a value of `05` gives a total of 1,079 points to distibute between these four stats, whereas a value of
 `12` gives 1,105. This value was tested using a base level 1 Zhuge Liang.
 
@@ -275,25 +287,25 @@ Weighting = Individual stat value / Total points to distribute
 
 | Value	| Weights
 | ----	| ----------
-| `00`	|	<p> **1,105 Points** <br> 0.24 Life <br> 0.24 Musuo <br> 0.24 Attack <br> 0.25 Defense </p>
-| `01`	|	<p> **1,111 Points** <br> 0.25 Life <br> 0.22 Musuo <br> 0.25 Attack <br> 0.25 Defense </p>
-| `02`	|	<p> **1,056 Points** <br> 0.24 Life <br> 0.28 Musuo <br> 0.23 Attack <br> 0.24 Defense </p>
-| `03`	|	<p> **1,103 Points** <br> 0.24 Life <br> 0.24 Musuo <br> 0.24 Attack <br> 0.26 Defense </p>
-| `04`	|	<p> **1,073 Points** <br> 0.24 Life <br> 0.26 Musuo <br> 0.24 Attack <br> 0.24 Defense </p>
-| `05`	|	<p> **1,079 Points** <br> 0.24 Life <br> 0.26 Musuo <br> 0.24 Attack <br> 0.24 Defense </p>
-| `06`	|	<p> **1,059 Points** <br> 0.24 Life <br> 0.27 Musuo <br> 0.24 Attack <br> 0.24 Defense </p>
-| `07`	|	<p> **1,018 Points** <br> 0.23 Life <br> 0.27 Musuo <br> 0.24 Attack <br> 0.24 Defense </p>
-| `08`	|	<p> **1,093 Points** <br> 0.24 Life <br> 0.24 Musuo <br> 0.26 Attack <br> 0.24 Defense </p>
-| `09`	|	<p> **1,090 Points** <br> 0.23 Life <br> 0.23 Musuo <br> 0.25 Attack <br> 0.26 Defense </p>
-| `10`	|	<p> **1,119 Points** <br> 0.24 Life <br> 0.24 Musuo <br> 0.24 Attack <br> 0.25 Defense </p>
-| `11`	|	<p> **1,119 Points** <br> 0.25 Life <br> 0.23 Musuo <br> 0.26 Attack <br> 0.25 Defense </p>
-| `12`	|	<p> **1,105 Points** <br> 0.25 Life <br> 0.22 Musuo <br> 0.26 Attack <br> 0.24 Defense </p>
+| `00`	|	<p> **1,105 Points** <br> 0.24 Life <br> 0.24 Musou <br> 0.24 Attack <br> 0.25 Defense </p>
+| `01`	|	<p> **1,111 Points** <br> 0.25 Life <br> 0.22 Musou <br> 0.25 Attack <br> 0.25 Defense </p>
+| `02`	|	<p> **1,056 Points** <br> 0.24 Life <br> 0.28 Musou <br> 0.23 Attack <br> 0.24 Defense </p>
+| `03`	|	<p> **1,103 Points** <br> 0.24 Life <br> 0.24 Musou <br> 0.24 Attack <br> 0.26 Defense </p>
+| `04`	|	<p> **1,073 Points** <br> 0.24 Life <br> 0.26 Musou <br> 0.24 Attack <br> 0.24 Defense </p>
+| `05`	|	<p> **1,079 Points** <br> 0.24 Life <br> 0.26 Musou <br> 0.24 Attack <br> 0.24 Defense </p>
+| `06`	|	<p> **1,059 Points** <br> 0.24 Life <br> 0.27 Musou <br> 0.24 Attack <br> 0.24 Defense </p>
+| `07`	|	<p> **1,018 Points** <br> 0.23 Life <br> 0.27 Musou <br> 0.24 Attack <br> 0.24 Defense </p>
+| `08`	|	<p> **1,093 Points** <br> 0.24 Life <br> 0.24 Musou <br> 0.26 Attack <br> 0.24 Defense </p>
+| `09`	|	<p> **1,090 Points** <br> 0.23 Life <br> 0.23 Musou <br> 0.25 Attack <br> 0.26 Defense </p>
+| `10`	|	<p> **1,119 Points** <br> 0.24 Life <br> 0.24 Musou <br> 0.24 Attack <br> 0.25 Defense </p>
+| `11`	|	<p> **1,119 Points** <br> 0.25 Life <br> 0.23 Musou <br> 0.26 Attack <br> 0.25 Defense </p>
+| `12`	|	<p> **1,105 Points** <br> 0.25 Life <br> 0.22 Musou <br> 0.26 Attack <br> 0.24 Defense </p>
 
-Using the same `weighting` value, I compared Zhuge Liang (lvl 1) and Zhao Yun's (lvl 47) stat distribution.
+Using the same `weighting` value, I compared Zhuge Liang (lvl 1) and Zhao Yun's (lvl 47) stat distribution:
 
 | Value	| Zhuge Liang weights	| Zhao Yun weights	| Zhuge Liang values	| Zhao Yun values
 | ----	| ----------			| ------			| ------				| ------
-| `02`	| <p> **1,056 Points** <br> 0.24 Life <br> 0.28 Musuo <br> 0.23 Attack <br> 0.24 Defense </p>	|	<p> **3,654 Points** <br> 0.24 Life <br> 0.25 Musuo <br> 0.24 Attack <br> 0.25 Defense </p>	| <p> 254 Life <br> 296 Musuo <br> 248 Attack <br> 258 Defense </p>	| <p> 896 Life <br> 938 Musuo <br> 900 Attack <br> 920 Defense </p>
+| `02`	| <p> **1,056 Points** <br> 0.24 Life <br> 0.28 Musou <br> 0.23 Attack <br> 0.24 Defense </p>	|	<p> **3,654 Points** <br> 0.24 Life <br> 0.25 Musou <br> 0.24 Attack <br> 0.25 Defense </p>	| <p> 254 Life <br> **296 Musou** <br> 248 Attack <br> 258 Defense </p>	| <p> 896 Life <br> **938 Musou** <br> 900 Attack <br> 920 Defense </p>
 
-The percentages are different, however the raw values show that both officers have the same most-favourable stat when their values are set to `02` - Musuo.
+The percentages are different, however the raw values show that both officers have the same most-favourable stat when their values are set to `02` - **Musou**.
 
