@@ -1,4 +1,4 @@
-DW6 Reverse Engineering
+
 
 
 ## Game executable memory addresses
@@ -266,7 +266,11 @@ Changing the `weighting` in-memory does result in a live update of their stats.
 `153`					| Grand General
 `154`					| Lord General
 
+### Stat weighting
 
+| Value				| Weights
+| ----------		| ----------
+| 00	|	<ul><li>value 1</li><li>value 2</li><li>value 3</li><li>value 4</li></ul> |
 
 
 
