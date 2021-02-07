@@ -270,7 +270,7 @@ Changing the `weighting` in-memory does result in a live update of their stats.
 
 | Value				| Weights
 | ----------		| ----------
-| 00	|	<p>value 1<br>value 2<p>value 3<br><p>value 4<br></p>
+| 00	|	<p> 0.24 Life <br> 0.24 Musuo <p> 0.24 Attack <br> <p> 0.25 Defense <br> </p>
 
 
 
