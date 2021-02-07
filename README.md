@@ -270,7 +270,7 @@ Changing the `weighting` in-memory does result in a live update of their stats.
 
 | Value				| Weights
 | ----------		| ----------
-| 00	|	<ul><li>value 1</li><li>value 2</li><li>value 3</li><li>value 4</li></ul> |
+| 00	|	<p>value 1<br>value 2<p>value 3<br><p>value 4<br></p>
 
 
 
