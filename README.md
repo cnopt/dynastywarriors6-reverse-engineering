@@ -406,7 +406,7 @@ Oh boy, warhorses also have their own pool of names. Two of them. And their own 
 Their `prefix` and `suffix` values are stored right next to eachother.
 
 ##### Prefixes
-| Value		| Name			| Value		| Name		| Value		| Name
+| Value		| Name			| 			| 			| 			| 
 | --------	| -----------	| --------	| --------- | --------	| --------	
 `01`		| Bay 			| `12`	    | Dawn 		| `23`	    | Ginger
 `02`		| Chestnut 		| `13`	    | Dusk 		| `24`	    | Royal
@@ -419,3 +419,22 @@ Their `prefix` and `suffix` values are stored right next to eachother.
 `09`		| Chrome 		| `20`	    | Southern 	| `31`	    | Cosmic
 `10`		| Dun 		    | `21`	    | Northern 	|    	    | 
 `11`		| Pinto 		| `22`	    | Phantom 	|    	    | 
+
+
+##### Suffixes
+| Value		| Name			| 			| 			| 			| 
+| --------	| -----------	| --------	| --------- | --------	| --------	
+`01`		| Cloud 		| `12`	    | Bull 		| `23`	    | Sprinter
+`02`		| Mist 			| `13`	    | Stone 	| `24`	    | Striker
+`03`		| Dream 		| `14`	    | Boulder 	| `25`	    | Emperor
+`04`		| Shadow 		| `15`	    | Beauty 	| `26`	    | King
+`05`		| Fang 		    | `16`	    | Warlord 	| `27`	    | Phoenix
+`06`		| Song 			| `17`	    | Sun 		| `28`	    | Titan
+`07`		| Fox 			| `18`	    | Moon 		| `29`	    | Wave
+`08`		| Leopard 		| `19`	    | Comet 	| `30`	    | Zephyr
+`09`		| Cat 			| `20`	    | Dasher 	| `31`	    | Warrior
+`10`		| Rat 		    | `21`	    | Eagle 	|    	    | 
+`11`		| Tiger 		| `22`	    | Devil 	|    	    | 
+
+The system does lead to some interesting/cool names, even when randomly generated, such as Cosmic Titan, or Valiant Emperor.
+If you want just one of these names without the prefix or suffix, you can put either of the values above `31` and it'll be blank.
