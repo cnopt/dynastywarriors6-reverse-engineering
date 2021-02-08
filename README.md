@@ -327,6 +327,15 @@ and certainly none of the final skills towards the right-hand side.
 
 ![Guan Ping skill tree](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_229.png)
 
+In game, the weapon remains, but he keeps his actual halberd/trident moveset.
+
+![Guan Ping ingame 1](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_231.png)
+![Guan Ping ingame 2](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_232.png)
+
 So maybe this is nothing to do with weighting after all. While I was testing the `weighting` value -- or that's what I thought it was -- the maximum value was 41. 
-There are 41 playable characters. Maybe this value is actually a sort of `id` that'd tied to the officer to contain their weapon information and level/stats.
+There are 41 playable characters. Maybe this value is actually a sort of `id` that's tied to the officer to contain their weapon information and level/stats.
 Will have to dig deeper into whether this value is unique for all officers.
+
+Replicated using Zhang Fei and Zhuge Liang by setting Zhang Fei's value to Zhuge :iang's value, then completing a stage. This effectively
+transfers both the cumulative XP gained (i.e. their level up to now), and the XP gained from the battle, onto the receiving player - in this case Zhuge Liang.
+Zhuge's weapon model was also changed, in the same way as the previous case. 
