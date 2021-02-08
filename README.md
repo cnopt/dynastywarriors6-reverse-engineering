@@ -445,6 +445,12 @@ If you want just one of these names without the prefix or suffix, you can put ei
 | --------	| -----------																		| --------	| ---------																				| --------	| --------																				| -------	| ---------
 `01`		| ![h1](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h1.png)| `05`	    | ![h5](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h5.png) 	| `09`	    | ![h9](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h9.png)	| `13`		| ![h13](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h13.png)
 `02`		| ![h2](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h2.png)| `06`	    | ![h6](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h6.png) 	| `10`	    | ![h10](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h10.png)	| `14`		| ![h14](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h14.png)
-`03`		| ![h3](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h3.png)| `07`	    | ![h7](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h7.png) 	| `11`	    | ![h11](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h11.png)
-`04`		| ![h4](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h4.png)| `08`	    | ![h8](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h8.png) 	| `12`	    | ![h12](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h12.png)
+`03`		| ![h3](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h3.png)| `07`	    | ![h7](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h7.png) 	| `11`	    | ![h11](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h11.png)	| `15`		| ![h15](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h15.png)
+`04`		| ![h4](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h4.png)| `08`	    | ![h8](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h8.png) 	| `12`	    | ![h12](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h12.png)	| `16`		| ![h16](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h16.png)
+
+##### Elements
+
+A horse has the chance to have an elemental ability tied to it, but there's only 3 of them: `Fire`, `Lightning`, and `Ice`.
+Each of these elements has a chance to bind to any officers/peons when you run them over with your horse. But nothing crazy.
+
 
