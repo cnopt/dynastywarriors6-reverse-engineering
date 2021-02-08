@@ -336,6 +336,28 @@ So maybe this is nothing to do with weighting after all. While I was testing the
 There are 41 playable characters. Maybe this value is actually a sort of `id` that's tied to the officer to contain their weapon information and level/stats.
 Will have to dig deeper into whether this value is unique for all officers.
 
-Replicated using Zhang Fei and Zhuge Liang by setting Zhang Fei's value to Zhuge :iang's value, then completing a stage. This effectively
+Replicated using Zhang Fei and Zhuge Liang by setting Zhang Fei's value to Zhuge Liang's value, then completing a stage. This effectively
 transfers both the cumulative XP gained (i.e. their level up to now), and the XP gained from the battle, onto the receiving player - in this case Zhuge Liang.
-Zhuge's weapon model was also changed, in the same way as the previous case. 
+Zhuge's weapon model was also changed, in the same way as the previous case. Reverting the values to their default state and completing a stage does mean the officers can go back to being able to level up
+their own stats, however does not seem to reverse the weapon model+inventory transfer.
+
+![Zhuge Liang](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_233.png)
+
+Setting every officer's value to `10`, the same as Zhao Yun's, then completing a stage with him, did **not** result in the same effect happening, like I thought it would.
+
+
+
+### Unlocking officers
+
+I compared two	`save.dat` files - one before unlocking an officer, and the second after unlocking Xu Huang. I was hoping to find a simple change from a `00` i.e. not unlocked false,
+to a `01` somewhere. Among other changes, presumably because the game keeps track of the objectives necessary to unlock each officer, there was a simple `00` -> `01` at block 1874.
+
+![Officer unlocked address](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_238.png)
+
+Changing this value back to 00, then reloading the save in-game through the options menu removed Xu Huang from the playable characters list.
+Additionally, looking around this data, there are a lot of repeating values and 0's throughout each block. This, combined with the fact that we know
+each officer's data is comprised of 168 bytes, led me to select the previous 168 bytes and see what value appears.
+
+![Officer unlocked address](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_237.png)
+
+It's `01`. Meaning this is clearly also an officer (one that's been unlocked), in this case it's Xiahou Yuan, since he appears before Xu Huang.
