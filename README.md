@@ -313,16 +313,19 @@ The percentages are different, however the raw values show that both officers ha
 When testing/comparing Yuan Shao and Guan Ping's titles as they levelled up, both of their `weighting` values were set to 33.
 I got Yuan Shao to level 7, then the game autosaved upon finishing the stage. When I returned to camp, I saw that Yuan Shao was back to level 4. So I checked Guan Ping, and saw this:
 
-![Guan Ping](https://github.com/cnopt/DW6-reverse-engineering/blob/master/Screenshot_227.png?raw=true)
+![Guan Ping](https://github.com/cnopt/DW6-Reverse-Engineering/blob/master/Screenshot_227.png?raw=true)
 
 He's using Yuan Shao's sword. And he's now level 7.
 
 His weapon inventory is also full of Yuan Shao's swords:
 
-![Guan Ping](https://github.com/cnopt/DW6-reverse-engineering/blob/master/Screenshot_228.png?raw=true)
+![Guan Ping inventory](https://github.com/cnopt/DW6-Reverse-Engineering/blob/master/Screenshot_228.png?raw=true)
 
 His skill tree is also all kinds of fucked up. It seems to be completely random, as Yuan Shao didn't have any of these skills unlocked,
 and certainly none of the final skills towards the right-hand side.
 
-![Guan Ping](https://github.com/cnopt/DW6-reverse-engineering/blob/master/Screenshot_229.png?raw=true)
+![Guan Ping skill tree](https://github.com/cnopt/DW6-Reverse-Engineering/blob/master/Screenshot_229.png?raw=true)
 
+So maybe this is nothing to do with weighting after all. While I was testing the `weighting` value -- or that's what I thought it was -- the maximum value was 41. 
+There are 41 playable characters. Maybe this value is actually a sort of `id` that'd tied to the officer to contain their weapon information and level/stats.
+Will have to dig deeper into whether this value is unique for all officers.
