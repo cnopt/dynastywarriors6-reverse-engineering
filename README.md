@@ -392,3 +392,9 @@ Ingame, using Red Hare with these values doesn't affect the speed of the horse, 
 however the `Destruction` value being so low means that the horse gets stuck on even the peon enemies:
 
 ![Red Hare troubles](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/horse_des_1.gif)
+
+Trying the opposite end of the spectrum:
+
+![Red Hare troubles](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_242.png)
+
+Sadly this doesn't result in a 300mph horse. In fact, it doesn't alter any of the stats in any meaningful way above 500.
