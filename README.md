@@ -406,7 +406,7 @@ Oh boy, warhorses also have their own pool of names. Two of them. And their own 
 Their `prefix` and `suffix` values are stored right next to eachother.
 
 ##### Prefixes
-| Value		| Name			| 			| 			| 			| 
+| Value		| Name			| Value		| Name		| Value		| Name
 | --------	| -----------	| --------	| --------- | --------	| --------	
 `01`		| Bay 			| `12`	    | Dawn 		| `23`	    | Ginger
 `02`		| Chestnut 		| `13`	    | Dusk 		| `24`	    | Royal
@@ -422,7 +422,7 @@ Their `prefix` and `suffix` values are stored right next to eachother.
 
 
 ##### Suffixes
-| Value		| Name			| 			| 			| 			| 
+| Value		| Name			| Value		| Name		| Value		| Name
 | --------	| -----------	| --------	| --------- | --------	| --------	
 `01`		| Cloud 		| `12`	    | Bull 		| `23`	    | Sprinter
 `02`		| Mist 			| `13`	    | Stone 	| `24`	    | Striker
