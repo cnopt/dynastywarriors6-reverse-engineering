@@ -384,3 +384,11 @@ data is around 60 bytes each, since there are less variables to keep track of.
 That's how they appear in the `save.dat` file. I have 4 maxed out horses, so their XP address holds the value `88 13` - 5000.
 Another easy one to figure out is the `Speed`, `Jump`, `Destruction`, and `Attack` values. They come 6 bytes after the XP value, since
 in this screenshot they are all at `F4 01` - 500.
+Each of these values can be adjusted in-game via the memory addresses I've found in the executable, or here inside this save file.
+
+![Warhorse stats changed](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_241.png)
+
+Ingame, using Red Hare with these values doesn't affect the speed of the horse, so there must be a minimum speed + an offset from the `Speed` stat,
+however the `Destruction` value being so low means that the horse gets stuck on even the peon enemies:
+
+![Red Hare troubles](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/horse_des_1.gif)
