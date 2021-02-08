@@ -338,7 +338,7 @@ Will have to dig deeper into whether this value is unique for all officers.
 
 Replicated using Zhang Fei and Zhuge Liang by setting Zhang Fei's value to Zhuge Liang's value, then completing a stage. This effectively
 transfers both the cumulative XP gained (i.e. their level up to now), and the XP gained from the battle, onto the receiving player - in this case Zhuge Liang.
-Zhuge's weapon model was also changed, in the same way as the previous case. Reverting the values to their default state and completing a stage does mean the officers can go back to being able to level up
+Zhuge's weapon model was also changed, in the same way as the previous case. Reverting the values to their default state and completing a stage *does* mean the officers can go back to being able to level up
 their own stats, however does **not** seem to reverse the weapon model+inventory transfer. 
 
 ![Zhuge Liang](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_233.png)
@@ -362,12 +362,25 @@ each officer's data is comprised of 168 bytes, led me to select the previous 168
 
 It's `01`. Meaning this is clearly also an officer (one that's been unlocked). In this case it's Xiahou Yuan, since he appears before Xu Huang.
 
-Moving forward another 168 bytes *after* Xu Huang's unlock status would theoretically then put us at the next officer's 'unlock status' address. That value
+Moving forward another 168 bytes *after* Xu Huang's 'unlock status' would theoretically then put us at the next officer's 'unlock status' address. That value
 is currently at `00`, since that officer hasn't been unlocked yet. Let's flip it to `01` and reload the save:
 
 ![Zhang He now unlocked](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_239.png)
 
-Apparently this byte is all that determines whether a character is playable, it doesn't matter if the objective to unlock them was actually met.
+It worked. Apparently this byte is all that determines whether a character is playable, it doesn't matter if the objective to unlock them was actually met.
 
-Advancing forward 168 bytes into the next 'block' and flipping the value to `01` allows us to unlock every officer in the game,
+Again, advancing forward 168 bytes into the next 'block' and flipping the value to `01` allows us to unlock every officer in the game,
 without doing any of the required objectives.
+
+---
+
+### Warhorses
+
+Horses are stored in much the same way officers are. Their XP and individual stats are all kept track of, however it seems as though their
+data is around 60 bytes each, since there are less variables to keep track of.
+
+![Warhorse hex values](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_240.png)
+
+That's how they appear in the `save.dat` file. I have 4 maxed out horses, so their XP address holds the value `88 13` - 5000.
+Another easy one to figure out is the `Speed`, `Jump`, `Destruction`, and `Attack` values. They come 6 bytes after the XP value, since
+in this screenshot they are all at `F4 01` - 500.
