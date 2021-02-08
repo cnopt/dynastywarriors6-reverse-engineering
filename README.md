@@ -271,10 +271,10 @@ Changing their level in-memory does result in their stats being altered accordin
 
 Tracking two different officer's titles as they level up. Both started at level 1. 
 
-| Officer	| Lvl 3					| Lvl 4				| Lvl 5						| Lvl 6						| Lvl 7
-| -----		| -----					| -----				| -----						| -----						| -----
-Yuan Shao	| `02` Field General	| `03` Gate General	| `06` Lt. Foot General		| `08` 4th Crusher General	| `13` 3rd Guard General
-Guan Ping	| `02` Field General	| `03` Gate General	| `10` Lt. Crusher General	| `13` 3rd Guard General	| `14` Lt. Guard General
+| Officer	| Lvl 3				| Lvl 4				| Lvl 5					| Lvl 6					| Lvl 7
+| -----		| -----				| -----				| -----					| -----					| -----
+Yuan Shao	| Field General		| Gate General		| Lt. Foot General		| 4th Crusher General	|  3rd Guard General
+Guan Ping	| Field General		| Gate General		| Lt. Crusher General	| 3rd Guard General		|  Lt. Guard General
 
 
 ### Stat weighting
@@ -308,4 +308,21 @@ Using the same `weighting` value, I compared Zhuge Liang (lvl 1) and Zhao Yun's 
 | `02`	| <p> **1,056 Points** <br> 0.24 Life <br> 0.28 Musou <br> 0.23 Attack <br> 0.24 Defense </p>	|	<p> **3,654 Points** <br> 0.24 Life <br> 0.25 Musou <br> 0.24 Attack <br> 0.25 Defense </p>	| <p> 254 Life <br> **296 Musou** <br> 248 Attack <br> 258 Defense </p>	| <p> 896 Life <br> **938 Musou** <br> 900 Attack <br> 920 Defense </p>
 
 The percentages are different, however the raw values show that both officers have the same most-favourable stat when their values are set to `02` - **Musou**.
+
+
+When testing/comparing Yuan Shao and Guan Ping's titles as they levelled up, both of their `weighting` values were set to 33.
+I got Yuan Shao to level 7, then the game autosaved upon finishing the stage. When I returned to camp, I saw that Yuan Shao was back to level 4. So I checked Guan Ping, and saw this:
+
+![Guan Ping](https://github.com/cnopt/DW6-reverse-engineering/blob/master/Screenshot_227.png?raw=true)
+
+He's using Yuan Shao's sword. And he's now level 7.
+
+His weapon inventory is also full of Yuan Shao's swords:
+
+![Guan Ping](https://github.com/cnopt/DW6-reverse-engineering/blob/master/Screenshot_228.png?raw=true)
+
+His skill tree is also all kinds of fucked up. It seems to be completely random, as Yuan Shao didn't have any of these skills unlocked,
+and certainly none of the final skills towards the right-hand side.
+
+![Guan Ping](https://github.com/cnopt/DW6-reverse-engineering/blob/master/Screenshot_229.png?raw=true)
 
