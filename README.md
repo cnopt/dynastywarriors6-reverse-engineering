@@ -397,4 +397,25 @@ Trying the opposite end of the spectrum:
 
 ![Red Hare troubles](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_242.png)
 
-Sadly this doesn't result in a 300mph horse. In fact, it doesn't alter any of the stats in any meaningful way above 500.
+Sadly this doesn't result in a 300mph horse. In fact, it doesn't alter any of the stats in any meaningful way above `500`.
+
+
+#### Warhorse data
+
+Oh boy, warhorses also have their own pool of names. Two of them. And their own titles. And their own two-part descriptions. All of which are randomly generated.
+Their `prefix` and `suffix` values are stored right next to eachother.
+
+##### Prefixes
+| Value		| Name			| Value		| Name		| Value		| Name
+| --------	| -----------	| --------	| --------- | --------	| --------	
+`01`		| Bay 			| `12`	    | Dawn 		| `23`	    | Ginger
+`02`		| Chestnut 		| `13`	    | Dusk 		| `24`	    | Royal
+`03`		| Grey 		    | `14`	    | Evening 	| `25`	    | Cinnamon
+`04`		| Blue 		    | `15`	    | Harvest 	| `26`	    | Saffron
+`05`		| Red 		    | `16`	    | Brindle 	| `27`	    | Sparkling
+`06`		| Dapple 		| `17`	    | Quiet 	| `28`	    | Valiant
+`07`		| Savage 		| `18`	    | Eastern 	| `29`	    | Brave
+`08`		| Roan 		    | `19`	    | Western 	| `30`	    | Ultimate
+`09`		| Chrome 		| `20`	    | Southern 	| `31`	    | Cosmic
+`10`		| Dun 		    | `21`	    | Northern 	|    	    | 
+`11`		| Pinto 		| `22`	    | Phantom 	|    	    | 
