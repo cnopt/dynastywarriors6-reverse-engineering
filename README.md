@@ -355,7 +355,7 @@ to a `01` somewhere. Among other changes, presumably because the game keeps trac
 ![Officer unlocked address](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_238.png)
 
 Changing this value back to 00, then reloading the save in-game through the options menu removed Xu Huang from the playable characters list.
-Additionally, looking around this data, there are a lot of repeating values and 0's throughout each block. This, combined with the fact that we know
+Looking around this data, there are a lot of repeating values and 0's throughout each block. This, combined with the fact that we know
 each officer's data is comprised of 168 bytes, led me to select the previous 168 bytes and see what value appears.
 
 ![Officer unlocked address](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_237.png)
@@ -438,3 +438,13 @@ Their `prefix` and `suffix` values are stored right next to eachother.
 
 The system does lead to some interesting/cool names, even when randomly generated, such as Cosmic Titan, or Valiant Emperor.
 If you want just one of these names without the prefix or suffix, you can put either of the values above `31` and it'll be blank.
+
+##### Models
+
+| Value		| Model																				| Value		| Model																					| Value		| Model																					| Value		| Model
+| --------	| -----------																		| --------	| ---------																				| --------	| --------																				| -------	| ---------
+`01`		| ![h1](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h1.png)| `05`	    | ![h5](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h5.png) 	| `09`	    | ![h9](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h9.png)	| `13`		| ![h13](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h13.png)
+`02`		| ![h2](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h2.png)| `06`	    | ![h6](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h6.png) 	| `10`	    | ![h10](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h10.png)	| `14`		| ![h14](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h14.png)
+`03`		| ![h3](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h3.png)| `07`	    | ![h7](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h7.png) 	| `11`	    | ![h11](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h11.png)
+`04`		| ![h4](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h4.png)| `08`	    | ![h8](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h8.png) 	| `12`	    | ![h12](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h12.png)
+
