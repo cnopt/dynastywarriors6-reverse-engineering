@@ -573,4 +573,28 @@ quite difficult. Even modifying the memory address in real-time, it took ages fo
 one that included both `Wind Spirit` and `Steel Hoof`. Imagine how long it'd take if you were to farm horses legitimately.
 
 With this information, it's possible to define your own *Ultimate Red Hare*:
+
 ![Red Hare](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_243.png)
+
+
+---
+
+### Challenge Mode
+
+### Leaderboards
+
+The 'personal best' screen shows a list of the top 10 best scores in that specific challenge. This data is also stored.
+Specifically, the total score, and some sort of ID number for the officer who got the score.
+
+I set a new high score of 1565 in Rampage with Lu Bu, then compared the save file.
+
+Previously, the record was 1500 by Lu Bu also:
+![Rampage high score](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_1.png)
+
+After getting 1565, this value changed, but the next byte after was still at `10 00`:
+![Rampage high score](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_2.png)
+
+I changed the byte of the officer now in second position (i.e. Lu Bu) from `10` to `17`, and Xu Zhu appeared:
+![Rampage high score](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_3.png)
+
+
