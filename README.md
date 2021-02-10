@@ -630,9 +630,20 @@ In order to find out Lu Xun and Dian Wei's **true** `id`'s, I could check the le
 
 ![Gauntlet high score changed](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_8.png)
 
-There's Lu Xun, in 5th position in Gauntlet. In the save data, his `id` appears as `06`: <br>
+There's Lu Xun, in 5th position in Gauntlet. In the save data for this challenge, his `id` appears as `06`: <br>
 
 ![Rampage high score changed](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_9.png)
+
+But in his block of stats where his XP/level etc. is stored, there is absolutely no 6. Only 7. I've previously downloaded a 100% completed save
+with all characters maxed out in order to compare the two `save.dat` files, so I diff'd my current save and the completed save,
+then navigated to Lu Xun's block:
+
+![Lu Xun stats block](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_10.png)
+
+To ~~double~~ ~~triple~~ quadruple check, I deleted my save and started fresh, and sure enough the value was set back to `06`. 
+I must have been fucking around with what I thought was the stat weighting, and accidentally saved the game at some point.
+
+
 
 
 

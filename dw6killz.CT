@@ -23,7 +23,7 @@ luacall(t.destroy())
     <CheatEntry>
       <ID>1</ID>
       <Description>"[volatile] current kills in session"</Description>
-      <LastState Value="0" RealAddress="007B2938"/>
+      <LastState Value="211" RealAddress="007B2938"/>
       <Color>C080FF</Color>
       <VariableType>4 Bytes</VariableType>
       <Address>007B2938</Address>
@@ -31,7 +31,7 @@ luacall(t.destroy())
     <CheatEntry>
       <ID>7</ID>
       <Description>"[volatile] current xp in session"</Description>
-      <LastState Value="0" RealAddress="007750B0"/>
+      <LastState Value="99999" RealAddress="007750B0"/>
       <Color>C080FF</Color>
       <VariableType>4 Bytes</VariableType>
       <Address>DW6_WIN.exe+3750B0</Address>
@@ -39,7 +39,7 @@ luacall(t.destroy())
     <CheatEntry>
       <ID>91</ID>
       <Description>"[volatile] current highest chain"</Description>
-      <LastState Value="0" RealAddress="007B2958"/>
+      <LastState Value="144" RealAddress="007B2958"/>
       <Color>C080FF</Color>
       <VariableType>4 Bytes</VariableType>
       <Address>007B2958</Address>
@@ -47,7 +47,7 @@ luacall(t.destroy())
     <CheatEntry>
       <ID>113</ID>
       <Description>"[volatile] current XP pouches"</Description>
-      <LastState Value="0" RealAddress="007B2944"/>
+      <LastState Value="160" RealAddress="007B2944"/>
       <Color>C080FF</Color>
       <VariableType>4 Bytes</VariableType>
       <Address>007B2944</Address>
@@ -55,7 +55,7 @@ luacall(t.destroy())
     <CheatEntry>
       <ID>114</ID>
       <Description>"[volatile] current kill XP"</Description>
-      <LastState Value="0" RealAddress="007B2948"/>
+      <LastState Value="200" RealAddress="007B2948"/>
       <Color>C080FF</Color>
       <VariableType>4 Bytes</VariableType>
       <Address>007B2948</Address>
@@ -63,7 +63,7 @@ luacall(t.destroy())
     <CheatEntry>
       <ID>136</ID>
       <Description>"Current weapon selected (Slot 0-7)"</Description>
-      <LastState Value="0" RealAddress="007750B8"/>
+      <LastState Value="7" RealAddress="007750B8"/>
       <Color>FF00FF</Color>
       <VariableType>4 Bytes</VariableType>
       <Address>007750B8</Address>
@@ -87,7 +87,7 @@ luacall(t.destroy())
         <CheatEntry>
           <ID>60</ID>
           <Description>"[base] Zhao Yun XP"</Description>
-          <LastState Value="92092" RealAddress="007B3D08"/>
+          <LastState Value="99999" RealAddress="007B3D08"/>
           <Color>008000</Color>
           <VariableType>4 Bytes</VariableType>
           <Address>007B3D08</Address>
@@ -95,7 +95,7 @@ luacall(t.destroy())
         <CheatEntry>
           <ID>55</ID>
           <Description>"[base] Zhao Yun Kills"</Description>
-          <LastState Value="10263" RealAddress="007B3D0C"/>
+          <LastState Value="10880" RealAddress="007B3D0C"/>
           <Color>008000</Color>
           <VariableType>4 Bytes</VariableType>
           <Address>DW6_WIN.exe+3B3D0C</Address>
@@ -103,7 +103,7 @@ luacall(t.destroy())
         <CheatEntry>
           <ID>65</ID>
           <Description>"[base] Zhao Yun Title"</Description>
-          <LastState Value="143" RealAddress="007B3D00"/>
+          <LastState Value="146" RealAddress="007B3D00"/>
           <Color>008000</Color>
           <VariableType>4 Bytes</VariableType>
           <Address>007B3D00</Address>
@@ -111,7 +111,7 @@ luacall(t.destroy())
         <CheatEntry>
           <ID>66</ID>
           <Description>"[base] Zhao Yun Level"</Description>
-          <LastState Value="46" RealAddress="007B3D04"/>
+          <LastState Value="49" RealAddress="007B3D04"/>
           <Color>008000</Color>
           <VariableType>4 Bytes</VariableType>
           <Address>007B3D04</Address>
@@ -168,7 +168,7 @@ luacall(t.destroy())
         <CheatEntry>
           <ID>67</ID>
           <Description>"[base] Guan Yu Stat Weighting"</Description>
-          <LastState Value="5" RealAddress="007B3DA0"/>
+          <LastState Value="11" RealAddress="007B3DA0"/>
           <Color>008000</Color>
           <VariableType>4 Bytes</VariableType>
           <Address>007B3DA0</Address>
@@ -646,7 +646,7 @@ luacall(t.destroy())
         <CheatEntry>
           <ID>104</ID>
           <Description>"[base] Lu Xun Stat Weighting"</Description>
-          <LastState Value="7" RealAddress="007B3A58"/>
+          <LastState Value="6" RealAddress="007B3A58"/>
           <Color>000080</Color>
           <VariableType>4 Bytes</VariableType>
           <Address>007B3A58</Address>
@@ -687,7 +687,7 @@ luacall(t.destroy())
         <CheatEntry>
           <ID>109</ID>
           <Description>"[base] Sun Shang Xiang Title"</Description>
-          <LastState Value="77" RealAddress="007B3B08"/>
+          <LastState Value="93" RealAddress="007B3B08"/>
           <Color>000080</Color>
           <VariableType>4 Bytes</VariableType>
           <Address>007B3B08</Address>
@@ -806,14 +806,14 @@ luacall(t.destroy())
         <CheatEntry>
           <ID>153</ID>
           <Description>"H1_description"</Description>
-          <LastState Value="3" RealAddress="007B549C"/>
+          <LastState Value="1" RealAddress="007B549C"/>
           <VariableType>4 Bytes</VariableType>
           <Address>007B549C</Address>
         </CheatEntry>
         <CheatEntry>
           <ID>154</ID>
           <Description>"H1_description part 2"</Description>
-          <LastState Value="15" RealAddress="007B54A0"/>
+          <LastState Value="2" RealAddress="007B54A0"/>
           <VariableType>4 Bytes</VariableType>
           <Address>007B54A0</Address>
         </CheatEntry>
@@ -1102,14 +1102,14 @@ luacall(t.destroy())
     <CheatEntry>
       <ID>139</ID>
       <Description>"No description"</Description>
-      <LastState Value="1063256064" RealAddress="0757CE70"/>
+      <LastState Value="3991726818" RealAddress="0757CE70"/>
       <VariableType>4 Bytes</VariableType>
       <Address>0757CE70</Address>
     </CheatEntry>
     <CheatEntry>
       <ID>140</ID>
       <Description>"maybe height"</Description>
-      <LastState Value="0.625" RealAddress="0757D054"/>
+      <LastState Value="2.350988562E-38" RealAddress="0757D054"/>
       <VariableType>Float</VariableType>
       <Address>0757D054</Address>
     </CheatEntry>
@@ -1174,6 +1174,34 @@ luacall(t.destroy())
       <CodePage>0</CodePage>
       <ZeroTerminate>1</ZeroTerminate>
       <Address>06B9E827</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>162</ID>
+      <Description>"zhao yun weapon skills ?"</Description>
+      <LastState Value="1" RealAddress="007B3CB0"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>007B3CB0</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>163</ID>
+      <Description>"zhao yun weapon damage"</Description>
+      <LastState Value="2" RealAddress="007B3CAC"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>007B3CAC</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>164</ID>
+      <Description>"zhao yun weapon element"</Description>
+      <LastState Value="1" RealAddress="007B3CB0"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>007B3CB0</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>165</ID>
+      <Description>"zhao yun weapon skills"</Description>
+      <LastState Value="2" RealAddress="007B3CB4"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>007B3CB4</Address>
     </CheatEntry>
   </CheatEntries>
   <CheatCodes>
