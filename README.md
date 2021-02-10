@@ -568,7 +568,7 @@ In other words,
 > with each doubling of the value, a new skill is introduced and the 'pool' is  increased, with 
 > the horse's random selection of 1-4 abilities now including this new skill.
 
-With the later abilities, such as `Wind Spirit`, this does make getting a horse with a specific set of abilities
+With the later abilities, such as `Wind Spirit`, this does make getting a horse with a specific set of skills
 quite difficult. Even modifying the memory address in real-time, it took ages for me to go through the values sequentially to find
 one that included both `Wind Spirit` and `Steel Hoof`. Imagine how long it'd take if you were to farm horses legitimately.
 
@@ -614,5 +614,15 @@ To test, I'll change some of these leaderboard id's to ones I already know are a
 
 ![Rampage high score changed](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_5.png)
 
+Weird. The first three officers are correct, but Zhou Yu and Sun Shang Xiang appear where Dian Wei and Lu Xun should appear.
+I checked their save data and it doesn't seem like I got a value wrong. I'll give Zhao Yun a `weighting`/`id` value of `05` and
+complete a stage in order to achieve the 'stat transfer' trick described above.
 
+![Rampage high score changed](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_6.png)
+
+Yep, Zhou Yu now has Zhao Yun's spear. And Dian Wei is unaffected. Next, I changed Zhao Yun's `weighting`/`id` to `07` and did the same.
+
+![Rampage high score changed](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_7.png)
+
+SSX now also has his spear. And Lu Xun is unaffected.
 
