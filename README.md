@@ -441,16 +441,107 @@ If you want just one of these names without the prefix or suffix, you can put ei
 
 ##### Models
 
-| Value		| Model																				| Value		| Model																					| Value		| Model																					| Value		| Model
+| #			| Model																				| #			| Model																						| #			| Model																					| #			| Model
 | --------	| -----------																		| --------	| ---------																				| --------	| --------																				| -------	| ---------
 `01`		| ![h1](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h1.png)| `05`	    | ![h5](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h5.png) 	| `09`	    | ![h9](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h9.png)	| `13`		| ![h13](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h13.png)
 `02`		| ![h2](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h2.png)| `06`	    | ![h6](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h6.png) 	| `10`	    | ![h10](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h10.png)	| `14`		| ![h14](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h14.png)
 `03`		| ![h3](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h3.png)| `07`	    | ![h7](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h7.png) 	| `11`	    | ![h11](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h11.png)	| `15`		| ![h15](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h15.png)
-`04`		| ![h4](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h4.png)| `08`	    | ![h8](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h8.png) 	| `12`	    | ![h12](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h12.png)	| `16`		| ![h16](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h16.png)
+`04`		| ![h4](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h4.png)| `08`	    | ![h8](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h8.png) 	| `12`	    | ![h12](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h12.png)	| 
 
 ##### Elements
 
 A horse has the chance to have an elemental ability tied to it, but there's only 3 of them: `Fire`, `Lightning`, and `Ice`.
-Each of these elements has a chance to bind to any officers/peons when you run them over with your horse. But nothing crazy.
+Each of these elements has a chance to bind to any officers/peons you run over with your horse. But nothing crazy.
+
+##### Description(s)
+
+A horse's description in this game consists of two parts - their **eyes** and their **physique**. That's all it comes down to.
+These are two different values in memory, meaning, like their names, they can be mix and matched. These descriptors tell you about the horse's
+ability in combat, and it's speed. But I imagine its a very loose fitting system.
+
+In the community, it's widely known that in order to obtain Red Hare, you need to find a red horse with these descriptors:
+
+1. Eyes consider the world
+2. Has a heavenly physique 
+
+Once you've got a horse with these descriptors, and raised it to level 5, it's model will transform to that of Red Hare - armour and all.
+However, according to [this](https://www.xboxachievements.com/forum/topic/50264-red-hare/) post, it's not a *true* red hare unless
+it also has the "Wind Spirit" skill, since that makes its speed that of the true Red Hare.
 
 
+##### Skills
+
+A horse can come with a set of 1-4 skills. Or no skills. This too is determined by a single value in the horse's save data block.
+It follows a pattern/logic, in that the skills stack on top eachother and then reset with a new 'base' skill.
+I'll list all of the skills a horse can have here:
+
+| Skill								| Description																				| #			| Model																						| #			| Model																					| #			| Model
+| --------							| -----------	
+*Values between 0-15 shuffle these skills:*
+Arrow Dance							| Repels arrows when running
+Find Saddle							| Acquire a horse after each victory
+Find Weapon							| Acquire a weapon after each victory
+Musou Spirit						| Musou guage gradually refills while on horse
+*Values between 16-31 shuffle these skills:*
+Renbu Gait							| Renbu gauge doesn't deplete while on horse
+Arrow Dance							| ''
+Find Saddle							| ''
+Find Weapon							| ''
+Musou Spirit						| ''
+*Values between 32-63 shuffle these skills:*
+Winged Hoof							| Damage enemies with a shockwave when landing from a big jump
+Arrow Dance							| ''
+Find Saddle							| ''
+Find Weapon							| ''
+Musou Spirit						| ''
+Renbu Gait							| ''
+*Values between 64-127 shuffle these skills:*
+Jagged Hoof							| Increased damage when running over enemies
+Winged Hoof							| ''
+Arrow Dance							| ''
+Find Saddle							| ''
+Find Weapon							| ''
+Musou Spirit						| ''
+Renbu Gait							| ''
+*Values between 128-255 shuffle these skills:*
+Steel Hoof							| Able to charge into large crowds
+Jagged Hoof							| ''
+Winged Hoof							| ''
+Arrow Dance							| ''
+Find Saddle							| ''
+Find Weapon							| ''
+Musou Spirit						| ''
+Renbu Gait							| ''
+*Values between 256-511 shuffle these skills:*
+Water Spirit						| Able to swim quickly, regardless of current
+Steel Hoof							| ''
+Jagged Hoof							| ''
+Winged Hoof							| ''
+Arrow Dance							| ''
+Find Saddle							| ''
+Find Weapon							| ''
+Musou Spirit						| ''
+Renbu Gait							| ''
+*Values between 512-1023 shuffle these skills:*
+Stone Spirit						| Able to withstand heavy damage
+Water Spirit						| ''
+Steel Hoof							| ''
+Jagged Hoof							| ''
+Winged Hoof							| ''
+Arrow Dance							| ''
+Find Saddle							| ''
+Find Weapon							| ''
+Musou Spirit						| ''
+Renbu Gait							| ''
+*Values between 1024-2047 shuffle these skills:*
+Wind Spirit							| **Able to run as fast as Red Hare**
+Stone Spirit						| ''
+Water Spirit						| ''
+Steel Hoof							| ''
+Jagged Hoof							| ''
+Winged Hoof							| ''
+Arrow Dance							| ''
+Find Saddle							| ''
+Find Weapon							| ''
+Musou Spirit						| ''
+Renbu Gait							| ''
