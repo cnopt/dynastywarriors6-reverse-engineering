@@ -468,6 +468,24 @@ Once you've got a horse with these descriptors, and raised it to level 5, it's m
 However, according to [this](https://www.xboxachievements.com/forum/topic/50264-red-hare/) post, it's not a *true* red hare unless
 it also has the "Wind Spirit" skill, since that makes its speed that of the true Red Hare.
 
+###### Eyes
+| Value				| Description
+| -----				| -----
+`00`				| **Gaze into the distance**
+`05`				| Miss nothing
+`07`				| View the world in clarity
+`15`				| Consider the world
+
+###### Physique
+| Value				| Description
+| -----				| -----
+`00`				| Harbors untold power
+`01`				| Has a well-balanced physique
+`02`				| Has a superior physique
+`03`				| **Has a heavenly physique**
+
+
+
 
 ##### Skills
 
@@ -534,7 +552,7 @@ Find Weapon							| ''
 Musou Spirit						| ''
 Renbu Gait							| ''
 *Values between 1024-2056 shuffle these skills:*
-Wind Spirit							| **Able to run as fast as Red Hare**
+**Wind Spirit**						| **Able to run as fast as Red Hare**
 Stone Spirit						| ''
 Water Spirit						| ''
 Steel Hoof							| ''
@@ -551,6 +569,8 @@ In other words,
 > the horse's random selection of 1-4 abilities now including this new skill.
 
 With the later abilities, such as `Wind Spirit`, this does make getting a horse with a specific set of abilities
-quite difficult. Even modifying the memory address in real-time, it took ages for me to go through the values sequntially to find
+quite difficult. Even modifying the memory address in real-time, it took ages for me to go through the values sequentially to find
 one that included both `Wind Spirit` and `Steel Hoof`. Imagine how long it'd take if you were to farm horses legitimately.
 
+
+#####
