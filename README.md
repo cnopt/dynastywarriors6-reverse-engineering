@@ -477,25 +477,25 @@ I'll list all of the skills a horse can have here:
 
 | Skill								| Description
 | --------							| -----------	
-* *Values between 0-15 shuffle these skills:* *
+*Values between 0-15 shuffle these skills:*
 Arrow Dance							| Repels arrows when running
 Find Saddle							| Acquire a horse after each victory
 Find Weapon							| Acquire a weapon after each victory
 Musou Spirit						| Musou guage gradually refills while on horse
-* *Values between 16-31 shuffle these skills:* *
+*Values between 16-31 shuffle these skills:*
 Renbu Gait							| Renbu gauge doesn't deplete while on horse
 Arrow Dance							| ''
 Find Saddle							| ''
 Find Weapon							| ''
 Musou Spirit						| ''
-* *Values between 32-63 shuffle these skills:* *
+*Values between 32-63 shuffle these skills:*
 Winged Hoof							| Damage enemies with a shockwave when landing from a big jump
 Arrow Dance							| ''
 Find Saddle							| ''
 Find Weapon							| ''
 Musou Spirit						| ''
 Renbu Gait							| ''
-* *Values between 64-127 shuffle these skills:* *
+*Values between 64-127 shuffle these skills:*
 Jagged Hoof							| Increased damage when running over enemies
 Winged Hoof							| ''
 Arrow Dance							| ''
@@ -503,7 +503,7 @@ Find Saddle							| ''
 Find Weapon							| ''
 Musou Spirit						| ''
 Renbu Gait							| ''
-* *Values between 128-255 shuffle these skills:* *
+*Values between 128-255 shuffle these skills:*
 Steel Hoof							| Able to charge into large crowds
 Jagged Hoof							| ''
 Winged Hoof							| ''
@@ -512,7 +512,7 @@ Find Saddle							| ''
 Find Weapon							| ''
 Musou Spirit						| ''
 Renbu Gait							| ''
-* *Values between 256-511 shuffle these skills:* *
+*Values between 256-511 shuffle these skills:*
 Water Spirit						| Able to swim quickly, regardless of current
 Steel Hoof							| ''
 Jagged Hoof							| ''
@@ -522,7 +522,7 @@ Find Saddle							| ''
 Find Weapon							| ''
 Musou Spirit						| ''
 Renbu Gait							| ''
-* *Values between 512-1023 shuffle these skills:* *
+*Values between 512-1023 shuffle these skills:*
 Stone Spirit						| Able to withstand heavy damage
 Water Spirit						| ''
 Steel Hoof							| ''
@@ -533,7 +533,7 @@ Find Saddle							| ''
 Find Weapon							| ''
 Musou Spirit						| ''
 Renbu Gait							| ''
-* *Values between 1024-2056 shuffle these skills:* *
+*Values between 1024-2056 shuffle these skills:*
 Wind Spirit							| **Able to run as fast as Red Hare**
 Stone Spirit						| ''
 Water Spirit						| ''
