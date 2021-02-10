@@ -586,15 +586,31 @@ With this information, it's possible to define your own *Ultimate Red Hare*:
 The 'personal best' screen shows a list of the top 10 best scores in that specific challenge. This data is also stored.
 Specifically, the total score, and some sort of ID number for the officer who got the score.
 
-I set a new high score of 1565 in Rampage with Lu Bu, then compared the save file.
+I set a new high score of 1565 in Rampage with Lu Bu, then compared the save files.
 
-Previously, the record was 1500 by Lu Bu also:
+Previously, the record was 1500 by Lu Bu also: <br>
 ![Rampage high score](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_1.png)
 
-After getting 1565, this value changed, but the next byte after was still at `10 00`:
+After getting 1565, this value changed, but the next byte after was still at `10 00`: <br>
 ![Rampage high score](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_2.png)
 
 I changed the byte of the officer now in second position (i.e. Lu Bu) from `10` to `17`, and Xu Zhu appeared:
 ![Rampage high score](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_3.png)
+
+Just to experiment, I put this 'id' to a stupid number, in this case 147:
+![Rampage high score](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_4.png)
+Who the hell is Jiang Qin. Must be a generic officer.
+
+
+Interestingly, in 7th position is Zhang Fei. After his high score is `0C` - 16. Since I'm thinking this looks like
+some sort of unique identifier, I'll check what his value for 'weighting' is set to. Turns out that is indeed also 16.
+
+To test, I'll change some of these leaderboard id's to ones I already know are assigned to specific officers:
+* Guan Ping is `33`
+* Yuan Shao is `36`
+* Lui Bei is `14`
+* Dian Wei is `5`
+* Lu Xun is	`7`
+
 
 
