@@ -572,5 +572,5 @@ With the later abilities, such as `Wind Spirit`, this does make getting a horse 
 quite difficult. Even modifying the memory address in real-time, it took ages for me to go through the values sequentially to find
 one that included both `Wind Spirit` and `Steel Hoof`. Imagine how long it'd take if you were to farm horses legitimately.
 
-
-#####
+With this information, it's possible to define your own *Ultimate Red Hare*:
+![Red Hare](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_243.png)
