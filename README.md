@@ -471,10 +471,10 @@ it also has the "Wind Spirit" skill, since that makes its speed that of the true
 ###### Eyes
 | Value				| Description
 | -----				| -----
-`00`				| **Gaze into the distance**
+`00`				| Gaze into the distance
 `05`				| Miss nothing
 `07`				| View the world in clarity
-`15`				| Consider the world
+`15`				| **Consider the world**
 
 ###### Physique
 | Value				| Description
@@ -624,5 +624,15 @@ Yep, Zhou Yu now has Zhao Yun's spear. And Dian Wei is unaffected. Next, I chang
 
 ![Rampage high score changed](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_7.png)
 
-SSX now also has his spear. And Lu Xun is unaffected.
+SSX now also has his spear. And Lu Xun is unaffected. Seems like I definitely got something wrong.
+
+In order to find out Lu Xun and Dian Wei's **true** `id`'s, I could check the leaderboards and see if they appear on any of them.
+
+![Gauntlet high score changed](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_8.png)
+
+There's Lu Xun, in 5th position in Gauntlet. In the save data, his `id` appears as `06`: <br>
+
+![Rampage high score changed](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_9.png)
+
+
 
