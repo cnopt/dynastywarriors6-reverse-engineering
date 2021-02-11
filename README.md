@@ -658,6 +658,9 @@ damage to fall into. It is affected by the `id`, in that a lower-tier weapon wil
 
 #### Weapon IDs
 
+This table is pretty interesting, since you can pinpoint exact moment they stopped giving a shit about different weapon models
+for each of the tiers. **From Xu Zhu onwards**, the first, second, and third weapons all share the same model.
+
 | Value		| Name							| Officer				| Image																													| Value		| Name					| Officer			| Image
 |----------	| -------------------			| -------------------	| ----------------																										| -------	| ----------------		| -------------		| ---------------------
 `00`		| Rock Crusher					| Xiahou Dun			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/xiahoudun-1.png)					| `68`		| Chaos					| Cao Pi			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/caopi-2.png)
@@ -730,3 +733,73 @@ damage to fall into. It is affected by the `id`, in that a lower-tier weapon wil
 `67`		| Mayhem						| Cao Pi				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/caopi-3.png)
 
 
+This of course lends itself to swapping weapons between officers, *without* the risk of irreversibly fucking up your 
+character's inventory/weapons permenantly, as is the case with the stat transfer method earlier. If you simply navigate through
+your officer's weapon slots 16 bytes at a time, starting from their `id`, you can fill up your invetory with a bunch
+of different weapons that you're absolutely not supposed to be using.
+
+
+#### Skills
+
+Weapons can have up to *five* skills attached to them. The value shuffles sets of 1-5 of them, in the same way as horse abilties.
+However this means things get even more complex.
+
+
+| Skill								| Description
+| --------							| -----------	
+*Values between 1-15 shuffle these skills:*
+Air Wave						    | Upon attack, sends out a wave of air that damages enemies
+Mystic Seal							| Elemental damage is stengthened
+True Musou							| Every Musou attack is a True Musou
+Leech								| Life gauge recovers slightly when inflicting damage
+*Values between 16-31 shuffle these skills:*
+Concentration						| Musou gauge depletes quickly, but is stengthened
+Air Wave						    | ''
+Mystic Seal							| ''
+True Musou							| ''
+Leech								| ''
+*Values between 32-63 shuffle these skills:*
+Balance								| Gain the advantage in a weapon deadlock
+Concentration						| ''
+Air Wave						    | ''
+Mystic Seal							| ''
+True Musou							| ''
+Leech								| ''
+*Values between 64-127 shuffle these skills:*
+Beserk								| Attack increases greatly, but defence drops massively
+Balance								| ''
+Concentration						| ''
+Air Wave						    | ''
+Mystic Seal							| ''
+True Musou							| ''
+Leech								| ''
+*Values between 128-255 shuffle these skills:*
+Renbu Spirit						| Chains stay active longer
+Beserk								| ''
+Balance								| ''
+Concentration						| ''
+Air Wave						    | ''
+Mystic Seal							| ''
+True Musou							| ''
+Leech								| ''
+*Values between 256-511 shuffle these skills:*
+Arrow Sight							| Deflect arrows while attacking
+Renbu Spirit						| ''
+Beserk								| ''
+Balance								| ''
+Concentration						| ''
+Air Wave						    | ''
+Mystic Seal							| ''
+True Musou							| ''
+Leech								| ''
+*Values between 512-1024 shuffle these skills:*
+Flash								| Chance to instantly defeat weaker opponents and deal heavy damage to officers
+Arrow Sight							| ''
+Renbu Spirit						| ''
+Beserk								| ''
+Balance								| ''
+Concentration						| ''
+Air Wave						    | ''
+Mystic Seal							| ''
+True Musou							| ''
+Leech								| ''

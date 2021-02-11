@@ -7,9 +7,22 @@
       <LastState/>
       <VariableType>Auto Assembler Script</VariableType>
       <AssemblerScript>[enable]
-luacall(ActivateTimer())
+DoneState = false
+local addr = 0x007B3CE8
+local val = 01
+local function timer_tick(timer)
+  writeInteger(addr, val + readInteger(addr))
+  -- writeFloat(addr, val + readFloat(addr))
+  if DoneState == true then
+    timer.destroy()
+  end
+end
+local someTimer = createTimer(MainForm)
+someTimer.Interval = 3000
+someTimer.OnTimer = timer_tick
+
 [disable]
-luacall(t.destroy())
+DoneState = true
 </AssemblerScript>
     </CheatEntry>
     <CheatEntry>
@@ -71,7 +84,7 @@ luacall(t.destroy())
     <CheatEntry>
       <ID>137</ID>
       <Description>"Current horse selected (0-8)"</Description>
-      <LastState Value="00000000" RealAddress="007756BC"/>
+      <LastState Value="00000008" RealAddress="007756BC"/>
       <ShowAsHex>1</ShowAsHex>
       <Color>FF00FF</Color>
       <VariableType>4 Bytes</VariableType>
@@ -1102,14 +1115,14 @@ luacall(t.destroy())
     <CheatEntry>
       <ID>139</ID>
       <Description>"No description"</Description>
-      <LastState Value="480" RealAddress="0757CE70"/>
+      <LastState Value="3991858405" RealAddress="0757CE70"/>
       <VariableType>4 Bytes</VariableType>
       <Address>0757CE70</Address>
     </CheatEntry>
     <CheatEntry>
       <ID>140</ID>
       <Description>"maybe height"</Description>
-      <LastState Value="4.484155086E-44" RealAddress="0757D054"/>
+      <LastState Value="2.350988562E-38" RealAddress="0757D054"/>
       <VariableType>Float</VariableType>
       <Address>0757D054</Address>
     </CheatEntry>
@@ -1178,28 +1191,28 @@ luacall(t.destroy())
     <CheatEntry>
       <ID>163</ID>
       <Description>"zhao yun weapon damage"</Description>
-      <LastState Value="30" RealAddress="007B3CAC"/>
+      <LastState Value="3" RealAddress="007B3CAC"/>
       <VariableType>4 Bytes</VariableType>
       <Address>007B3CAC</Address>
     </CheatEntry>
     <CheatEntry>
       <ID>164</ID>
       <Description>"zhao yun weapon element"</Description>
-      <LastState Value="0" RealAddress="007B3CB0"/>
+      <LastState Value="7" RealAddress="007B3CB0"/>
       <VariableType>4 Bytes</VariableType>
       <Address>007B3CB0</Address>
     </CheatEntry>
     <CheatEntry>
       <ID>165</ID>
       <Description>"zhao yun weapon skills"</Description>
-      <LastState Value="1" RealAddress="007B3CB4"/>
+      <LastState Value="0" RealAddress="007B3CB4"/>
       <VariableType>4 Bytes</VariableType>
       <Address>007B3CB4</Address>
     </CheatEntry>
     <CheatEntry>
       <ID>166</ID>
       <Description>"zhao yun 1st weapon damage"</Description>
-      <LastState Value="1" RealAddress="007B3C7C"/>
+      <LastState Value="30" RealAddress="007B3C7C"/>
       <VariableType>Byte</VariableType>
       <Address>007B3C7C</Address>
     </CheatEntry>
@@ -1213,8 +1226,8 @@ luacall(t.destroy())
     <CheatEntry>
       <ID>168</ID>
       <Description>"zhao yun 1st weapon skills"</Description>
-      <LastState Value="64" RealAddress="007B3C84"/>
-      <VariableType>Byte</VariableType>
+      <LastState Value="604" RealAddress="007B3C84"/>
+      <VariableType>4 Bytes</VariableType>
       <Address>007B3C84</Address>
     </CheatEntry>
     <CheatEntry>
@@ -1223,6 +1236,13 @@ luacall(t.destroy())
       <LastState Value="31" RealAddress="007B3C78"/>
       <VariableType>Byte</VariableType>
       <Address>007B3C78</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>170</ID>
+      <Description>"zhao yun current weapon id"</Description>
+      <LastState Value="58" RealAddress="007B3CE8"/>
+      <VariableType>Byte</VariableType>
+      <Address>007B3CE8</Address>
     </CheatEntry>
   </CheatEntries>
   <CheatCodes>
@@ -2012,126 +2032,21 @@ luacall(t.destroy())
       </Elements>
     </Structure>
   </Structures>
-  <LuaScript>-- OFFICER KILL ADDRESSES ---
-zhaoYunKA = 0x007B3D0C
-guanYuKA = 0x007B3DB4
-zhangFeiKA = 0x007B3E5C
-xiahouDunKA = 0x007B367C
-dianWeiKA = 0x007B3724
-simaYiKA = 0x007B37CC
-zhouYuKA = 0x007B39C4
-luXunKA = 0x007B3A6C
-sunShangKA = 0x007B3B14
-
--- READ ADDRESS VALUES ---
-zhaoYunKV = readInteger(zhaoYunKA)
-guanYuKV = readInteger(guanYuKA)
-zhangFeiKV = readInteger(zhangFeiKA)
-xiahouDunKV = readInteger(xiahouDunKA)
-dianWeiKV = readInteger(dianWeiKA)
-simaYiKV = readInteger(simaYiKA)
-zhouYuKV = readInteger(zhouYuKA)
-luXunKV = readInteger(luXunKA)
-sunShangKV = readInteger(sunShangKA)
-
-
-
-function getKills()
-  -- TOTAL KILLS -------------------------
-  totalKillsValue = zhaoYunKV +
-                    guanYuKV +
-                    zhangFeiKV +
-                    xiahouDunKV +
-                    dianWeiKV +
-                    simaYiKV +
-                    zhouYuKV +
-                    luXunKV +
-                    sunShangKV
-  print("Total kills: " .. totalKillsValue)
-  file = io.open("shoe.txt", "w+")
-  io.output(file)
-  io.write(totalKillsValue)
-  io.close(file)
-  ----------------------------------------
-
-  -- Zhao Yun Kills ----------------------
-  print("Zhao Yun killz: " .. zhaoYunKV)
-  file = io.open("shoe.txt", "a")
-  io.output(file)
-  io.write("\n\n" .. zhaoYunKV)
-  io.close(file)
-  ----------------------------------------
-
-  -- Guan Yu Kills -----------------------
-  print("Guan Yu killz: " .. guanYuKV)
-  file = io.open("shoe.txt", "a")
-  io.output(file)
-  io.write("\n" .. guanYuKV)
-  io.close(file)
-  ----------------------------------------
-
-  -- Zhang Fei Kills ---------------------
-  print("Zhang Fei killz: " .. zhangFeiKV)
-  file = io.open("shoe.txt", "a")
-  io.output(file)
-  io.write("\n" .. zhangFeiKV)
-  io.close(file)
-  ----------------------------------------
-
-  -- Xiahou Dun Kills --------------------
-  print("Xiahou Dun killz: " .. xiahouDunKV)
-  file = io.open("shoe.txt", "a")
-  io.output(file)
-  io.write("\n" .. xiahouDunKV)
-  io.close(file)
-  ----------------------------------------
-
-  -- Dian Wei Kills ----------------------
-  print("Dian Wei killz: " .. dianWeiKV)
-  file = io.open("shoe.txt", "a")
-  io.output(file)
-  io.write("\n" .. dianWeiKV)
-  io.close(file)
-  ----------------------------------------
-
-  -- Sima Yi Kills -----------------------
-  print("Sima Yi killz: " .. simaYiKV)
-  file = io.open("shoe.txt", "a")
-  io.output(file)
-  io.write("\n" .. simaYiKV)
-  io.close(file)
-  ----------------------------------------
-
-  -- Zhou Yu Kills -----------------------
-  print("Zhou Yu killz: " .. zhouYuKV)
-  file = io.open("shoe.txt", "a")
-  io.output(file)
-  io.write("\n" .. zhouYuKV)
-  io.close(file)
-  ----------------------------------------
-
-  -- Lu Xun Kills ------------------------
-  print("Lu Xun killz: " .. luXunKV)
-  file = io.open("shoe.txt", "a")
-  io.output(file)
-  io.write("\n" .. luXunKV)
-  io.close(file)
-  ----------------------------------------
-
-  -- Sun Shang Xiang Kills ---------------
-  print("Sun Shang Xiang killz: " .. sunShangKV)
-  file = io.open("shoe.txt", "a")
-  io.output(file)
-  io.write("\n" .. sunShangKV)
-  io.close(file)
-  -----------------------------------------
+  <LuaScript>[ENABLE]
+DoneState = false
+local addr = 0x007B3CE8
+local val = 01
+local function timer_tick(timer)
+  writeInteger(addr, val + readInteger(addr))
+  if DoneState == true then
+    timer.destroy()
+  end
 end
+local someTimer = createTimer(MainForm)
+someTimer.Interval = 10000
+someTimer.OnTimer = timer_tick
 
-function ActivateTimer()
-  t = createTimer(nil)
-  t.onTimer=getKills
-  t.Interval = 3000 -- every 3 seconds
-  t.Enabled = true
-end
+[DISABLE]
+DoneState = true
 </LuaScript>
 </CheatTable>
