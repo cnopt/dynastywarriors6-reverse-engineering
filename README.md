@@ -658,11 +658,11 @@ damage to fall into. It is affected by the `id`, in that a lower-tier weapon wil
 
 #### Weapon IDs
 
-| Value		| Name							| Officer				| Image					| Value		| Name					| Officer			| Image
-|----------	| -------------------			| -------------------	| ----------------		| -------	| ----------------		| -------------		| ---------------------
-`00`		| Rock Crusher					| Xiahou Dun			|						| `68`		| Chaos					| Cao Pi			|
-`01`		| Wave Breaker					| Xiahou Dun			|						| `69`		| Rage Trident			| Taishi Ci			|
-`02`		| Thundersmash					| Xiahou Dun			|						| `70`		| Savage Trident		| Taishi Ci			|
+| Value		| Name							| Officer				| Image																													| Value		| Name					| Officer			| Image
+|----------	| -------------------			| -------------------	| ----------------																										| -------	| ----------------		| -------------		| ---------------------
+`00`		| Rock Crusher					| Xiahou Dun			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/xiahoudun-1.png)					| `68`		| Chaos					| Cao Pi			|
+`01`		| Wave Breaker					| Xiahou Dun			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/xiahoudun-3.png)					| `69`		| Rage Trident			| Taishi Ci			|
+`02`		| Thundersmash					| Xiahou Dun			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/xiahoudun-2.png)					| `70`		| Savage Trident		| Taishi Ci			|
 `03`		| Violent Soul Flail			| Dian Wei				|						| `71`		| Tsunami Trident		| Taishi Ci			|
 `04`		| Lion's Head Flail				| Dian Wei				|						| `72`		| Valor					| Lu Meng			|
 `05`		| Beserker Flail				| Dian Wei				|						| `73`		| Spirit				| Lu Meng			|
