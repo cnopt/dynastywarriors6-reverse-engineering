@@ -743,16 +743,22 @@ of different weapons that you're absolutely not supposed to be using:
 But, unlike in later entries to the series where weapon switching is a mechanic, the moveset and animations doesn't change. 
 But with some imagination and some help from the table above, you can end up with some pretty decent looking swaps...
 
-Liu Bei with the twin fans:
-![lui bei with fans](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_11.png)<br>
+Liu Bei with the twin fans:<br>
+![lui bei with fans](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_11.png)
 <br>
+<br>
+
 Giving Zhou Yu Dian Wei's weapon *somehow* also works pretty well!!:
 ![zhou yu wtf](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_12.png)
 ![zhou yu wtf](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/zhouyu-min.gif)
 <br>
+<br>
+
 Turn out Sima Yi doesn't actually have hands:
 ![sima scissorhands](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_15.png)
 <br>
+<br>
+
 Lu Xun holding Xu Zhu's 600 pound club with his wrist:
 ![sima scissorhands](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_14.png)
 
