@@ -663,9 +663,9 @@ damage to fall into. It is affected by the `id`, in that a lower-tier weapon wil
 `00`		| Rock Crusher					| Xiahou Dun			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/xiahoudun-1.png)					| `68`		| Chaos					| Cao Pi			|
 `01`		| Wave Breaker					| Xiahou Dun			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/xiahoudun-3.png)					| `69`		| Rage Trident			| Taishi Ci			|
 `02`		| Thundersmash					| Xiahou Dun			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/xiahoudun-2.png)					| `70`		| Savage Trident		| Taishi Ci			|
-`03`		| Violent Soul Flail			| Dian Wei				|						| `71`		| Tsunami Trident		| Taishi Ci			|
-`04`		| Lion's Head Flail				| Dian Wei				|						| `72`		| Valor					| Lu Meng			|
-`05`		| Beserker Flail				| Dian Wei				|						| `73`		| Spirit				| Lu Meng			|
+`03`		| Violent Soul Flail			| Dian Wei				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/dianwei-1.png)						| `71`		| Tsunami Trident		| Taishi Ci			|
+`04`		| Lion's Head Flail				| Dian Wei				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/dianwei-3.png)						| `72`		| Valor					| Lu Meng			|
+`05`		| Beserker Flail				| Dian Wei				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/dianwei-2.png)						| `73`		| Spirit				| Lu Meng			|
 `06`		| Eradication Claws				| Sima Ye				| 						| `74`		| Courage				| Lu Meng			|
 `07`		| Anguish Claws					| Sima Ye				| 						| `75`		| River Slicer			| Huang Guai		|
 `08`		| Necrosis Claws				| Sima Ye				| 						| `76`		| Mountain Breaker		| Huang Guai		|
