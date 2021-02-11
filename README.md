@@ -650,8 +650,22 @@ I must have been fucking around with what I thought was the stat weighting, and 
 Weapons are stored in blocks of 16 bytes, before each character's general stats. It consists of the following:
 
 * `weapon id` - a unique identifier for the weapon that the officer wields. This value is specific to even the level of
-the weapon.#, i.e. Zhao Yun's second-level weapon 'Dragon Spike' is a different value to Zhao Yun's 'Dragon Fang'.
-* `weapon damage` - 
+the weapon, i.e. Zhao Yun's first-level weapon 'Dragon Spike' is a different value to Zhao Yun's 'Dragon Fang'.
+* `damage` - This *isn't* a direct numerical value for the weapon's damage. Instead, it works as a sort of 'bracket' for the 
+damage to fall into. It is affected by the `id`, in that a lower-tier weapon will have reduced damage, even while value remains the same.
+* `element` - Can be Fire, Ice, or Lightning.
+* `skills` - A set of 1-4 abilities the weapon has.
 
+#### Weapon IDs
+
+| Value			| Name							| Original officer		| Tier		| Image
+|----------		| -------------------			| -------------------	| ------	|---------------
+`00`			| Rock Crusher					| Xiahou Dun			| 1			| aaa
+`01`			| Wave Breaker					| Xiahou Dun			| 3
+`02`			| Thundersmash					| Xiahou Dun			| 2			
+`03`			| Violent Soul Flail			| Dian Wei				| 1			| aaa
+`04`			| Lion's Head Flail				| Dian Wei				| 3
+`05`			| Beserker Flail				| Dian Wei				| 2
+`06`			| Eradication Claws				| Zhange He				| 1			| aaa
 
 
