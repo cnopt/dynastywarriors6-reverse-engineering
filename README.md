@@ -658,14 +658,75 @@ damage to fall into. It is affected by the `id`, in that a lower-tier weapon wil
 
 #### Weapon IDs
 
-| Value			| Name							| Original officer		| Tier		| Image
-|----------		| -------------------			| -------------------	| ------	|---------------
-`00`			| Rock Crusher					| Xiahou Dun			| 1			| aaa
-`01`			| Wave Breaker					| Xiahou Dun			| 3
-`02`			| Thundersmash					| Xiahou Dun			| 2			
-`03`			| Violent Soul Flail			| Dian Wei				| 1			| aaa
-`04`			| Lion's Head Flail				| Dian Wei				| 3
-`05`			| Beserker Flail				| Dian Wei				| 2
-`06`			| Eradication Claws				| Zhange He				| 1			| aaa
+| Value		| Name							| Officer				| Image					| Value		| Name					| Officer			| Image
+|----------	| -------------------			| -------------------	| ----------------		| -------	| ----------------		| -------------		| ---------------------
+`00`		| Rock Crusher					| Xiahou Dun			|						| `68`		| Chaos					| Cao Pi			|
+`01`		| Wave Breaker					| Xiahou Dun			|						| `69`		| Rage Trident			| Taishi Ci			|
+`02`		| Thundersmash					| Xiahou Dun			|						| `70`		| Savage Trident		| Taishi Ci			|
+`03`		| Violent Soul Flail			| Dian Wei				|						| `71`		| Tsunami Trident		| Taishi Ci			|
+`04`		| Lion's Head Flail				| Dian Wei				|						| `72`		| Valor					| Lu Meng			|
+`05`		| Beserker Flail				| Dian Wei				|						| `73`		| Spirit				| Lu Meng			|
+`06`		| Eradication Claws				| Sima Ye				| 						| `74`		| Courage				| Lu Meng			|
+`07`		| Anguish Claws					| Sima Ye				| 						| `75`		| River Slicer			| Huang Guai		|
+`08`		| Necrosis Claws				| Sima Ye				| 						| `76`		| Mountain Breaker		| Huang Guai		|
+`09`		| Twin Vipers					| Zhange Liao			| 						| `77`		| Sky Lasher			| Huang Guai		|
+`10`		| Twin Dragons					| Zhange Liao			| 						| `78`		| Flashstrike			| Zhou Tai			|
+`11`		| Twin Eagles					| Zhange Liao			| 						| `79`		| Dawnstrike			| Zhou Tai			|
+`12`		| Sword of Heaven				| Cao Cao				| 						| `80`		| Duskstrike			| Zhou Tai			|
+`13`		| Blue Blade					| Cao Cao				| 						| `81`		| Flying Nimbus			| Ling Tong			|
+`14`		| Seven Star Sword				| Cao Cao				| 						| `82`		| Rising Nimbus			| Ling Tong			|
+`15`		| Red Dusk						| Zhou Yu				| 						| `83`		| Lofting Nimbus		| Ling Tong			|
+`16`		| Dark Night					| Zhou Yu				| 						| `84`		| Tryant Strike			| Sun Ce			|
+`17`		| Scarlet Dawn					| Zhou Yu				|  						| `85`		| Glimmer Strike		| Sun Ce			|
+`18`		| Silver Swallow				| Lu Xun				|  						| `86`		| Stoic Strike			| Sun Ce			|
+`19`		| Blue Falcon					| Lu Xun				|  						| `87`		| Dragon's Might		| Sun Quan			|
+`20`		| Jade Warbler					| Lu Xun				|   					| `88`		| Heaven's Might		| Sun Quan			|
+`21`		| Madder Rose					| Sun Shang Xiang		|   					| `89`		| Tiatan's Might		| Sun Quan			|
+`22`		| Wisteria Breeze				| Sun Shang Xiang		|   					| `90`		| Ironhorse Glaive		| Ma Chao			|
+`23`		| Lotus Bow						| Sun Shang Xiang		|   					| `91`		| Dragonrun Glaive		| Ma Chao			|
+`24`		| Crescent Moon					| Gan Ning				|   					| `92`		| Warsteed Glaive		| Ma Chao			|
+`25`		| Dancing Dragon				| Gan Ning				|   					| `93`		| Immortal Blade		| Huang Zhong		|
+`26`		| Wing Blade					| Gan Ning				|  						| `94`		| Battle Master Blade	| Huang Zhong		|
+`27`		| Elder Sword					| Sun Jian				|   					| `95`		| Princeps Blade		| Huang Zhong		|
+`28`		| Nine Hook Sword				| Sun Jian				|   					| `96`		| The Awakener			| Wei Yan			|
+`29`		| Golden Pheonix				| Sun Jian				|    					| `97`		| Bone Splitter			| Wei Yan			|
+`30`		| Dragon Spike					| Zhao Yun				|    					| `98`		| Stormhowl				| Wei Yan			|
+`31`		| Dragon Fang					| Zhao Yun				|    					| `99`		| Blue Dragon Ji		| Guan Ping			|
+`32`		| Dragon Talon					| Zhao Yun				|     					| `100`		| Black Dragon Ji		| Guan Ping			|
+`33`		| Blue Dragon					| Guan Yu				|     					| `101`		| White Dragon Ji		| Guan Ping			|
+`34`		| Black Dragon					| Guan Yu				|     					| `102`		| Firestorm Staff		| Pang Tong			|
+`35`		| White Dragon					| Guan Yu				|      					| `103`		| Blizzard Staff		| Pang Tong			|
+`36`		| Serpent Blade					| Zhang Fei				|      					| `104`		| Typhoon Staff			| Pang Tong			|
+`37`		| Python Blade					| Zhang Fei				|      					| `105`		| Wizard Club			| Dong Zhuo			|
+`38`		| Viper Blade					| Zhang Fei				|       				| `106`		| Magus Club			| Dong Zhuo			|
+`39`		| Brilliance					| Zhuge Liang			|       				| `107`		| Augur Club			| Dong Zhuo			|
+`40`		| Distinction					| Zhuge Liang			|       				| `108`		| Sword of Kings		| Yuan Shao			|
+`41`		| Enlightenment					| Zhuge Liang			|        				| `109`		| Sword of Severity		| Yuan Shao			|
+`42`		| Strength and Virtue			| Liu Bei				|        				| `110`		| North Star Sword		| Yuan Shao			|
+`43`		| Heaven and Earth				| Liu Bei				|        				| `111`		| Blaze Staff			| Zhang Jiao		|
+`44`		| Yin and Yang					| Liu Bei				|         				| `112`		| Blight Staff			| Zhang Jiao		|
+`45`		| Moonflower					| Diao Chan				|         				| `113`		| Judgement Staff		| Zhang Jiao		|
+`46`		| Dewflower						| Diao Chan				|         				| `114`		| Allure				| Zhen Ji			|
+`47`		| Rainflower					| Diao Chan				|          				| `115`		| Charm					| Zhen Ji			|
+`48`		| Sky Piercer					| Lu Bu					|          				| `116`		| Seduction				| Zhen Ji			|
+`49`		| Demon Bane					| Lu Bu					|          				| `117`		| True Grace			| Xiao Qiao			|
+`50`		| Heron Blade Halberd			| Lu Bu					|           			| `118`		| True Beauty			| Xiao Qiao			|
+`51`		| Bone Crusher					| Xu Zhu				|           			| `119`		| True Luster			| Xiao Qiao			|
+`52`		| Chaos Crusher					| Xu Zhu				|           			| `120`		| Emerald Dew			| Yue Ying			|
+`53`		| Whirlwind Crusher				| Xu Zhu				|            			| `121`		| Emerald Veil			| Yue Ying			|
+`54`		| Heavens Destroyer				| Xiahou Yuan			|            			| `122`		| Emerald Mist			| Yue Ying			|
+`55`		| Heavens Smasher				| Xiahou Yuan			| 
+`56`		| Heavens Cutter				| Xiahou Yuan			| 
+`57`		| Destroyer						| Xu Huang				| 
+`58`		| Annihilator					| Xu Huang				| 
+`59`		| Obliterator					| Xu Huang				| 
+`60`		| Splendor						| Zhang He				| 
+`61`		| Mystery						| Zhang He				| 
+`62`		| Ostentation					| Zhang He				| 
+`63`		| Phoenix Wing					| Cao Ren				| 
+`64`		| Dragon Scale					| Cao Ren				| 
+`65`		| Tortoise Bite					| Cao Ren				| 
+`66`		| Havoc							| Cao Pi				| 
+`67`		| Mayhem						| Cao Pi				| 
 
 
