@@ -660,73 +660,73 @@ damage to fall into. It is affected by the `id`, in that a lower-tier weapon wil
 
 | Value		| Name							| Officer				| Image																													| Value		| Name					| Officer			| Image
 |----------	| -------------------			| -------------------	| ----------------																										| -------	| ----------------		| -------------		| ---------------------
-`00`		| Rock Crusher					| Xiahou Dun			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/xiahoudun-1.png)					| `68`		| Chaos					| Cao Pi			|
-`01`		| Wave Breaker					| Xiahou Dun			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/xiahoudun-3.png)					| `69`		| Rage Trident			| Taishi Ci			|
-`02`		| Thundersmash					| Xiahou Dun			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/xiahoudun-2.png)					| `70`		| Savage Trident		| Taishi Ci			|
-`03`		| Violent Soul Flail			| Dian Wei				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/dianwei-1.png)						| `71`		| Tsunami Trident		| Taishi Ci			|
-`04`		| Lion's Head Flail				| Dian Wei				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/dianwei-3.png)						| `72`		| Valor					| Lu Meng			|
-`05`		| Beserker Flail				| Dian Wei				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/dianwei-2.png)						| `73`		| Spirit				| Lu Meng			|
-`06`		| Eradication Claws				| Sima Ye				| 						| `74`		| Courage				| Lu Meng			|
-`07`		| Anguish Claws					| Sima Ye				| 						| `75`		| River Slicer			| Huang Guai		|
-`08`		| Necrosis Claws				| Sima Ye				| 						| `76`		| Mountain Breaker		| Huang Guai		|
-`09`		| Twin Vipers					| Zhange Liao			| 						| `77`		| Sky Lasher			| Huang Guai		|
-`10`		| Twin Dragons					| Zhange Liao			| 						| `78`		| Flashstrike			| Zhou Tai			|
-`11`		| Twin Eagles					| Zhange Liao			| 						| `79`		| Dawnstrike			| Zhou Tai			|
-`12`		| Sword of Heaven				| Cao Cao				| 						| `80`		| Duskstrike			| Zhou Tai			|
-`13`		| Blue Blade					| Cao Cao				| 						| `81`		| Flying Nimbus			| Ling Tong			|
-`14`		| Seven Star Sword				| Cao Cao				| 						| `82`		| Rising Nimbus			| Ling Tong			|
-`15`		| Red Dusk						| Zhou Yu				| 						| `83`		| Lofting Nimbus		| Ling Tong			|
-`16`		| Dark Night					| Zhou Yu				| 						| `84`		| Tryant Strike			| Sun Ce			|
-`17`		| Scarlet Dawn					| Zhou Yu				|  						| `85`		| Glimmer Strike		| Sun Ce			|
-`18`		| Silver Swallow				| Lu Xun				|  						| `86`		| Stoic Strike			| Sun Ce			|
-`19`		| Blue Falcon					| Lu Xun				|  						| `87`		| Dragon's Might		| Sun Quan			|
-`20`		| Jade Warbler					| Lu Xun				|   					| `88`		| Heaven's Might		| Sun Quan			|
-`21`		| Madder Rose					| Sun Shang Xiang		|   					| `89`		| Tiatan's Might		| Sun Quan			|
-`22`		| Wisteria Breeze				| Sun Shang Xiang		|   					| `90`		| Ironhorse Glaive		| Ma Chao			|
-`23`		| Lotus Bow						| Sun Shang Xiang		|   					| `91`		| Dragonrun Glaive		| Ma Chao			|
-`24`		| Crescent Moon					| Gan Ning				|   					| `92`		| Warsteed Glaive		| Ma Chao			|
-`25`		| Dancing Dragon				| Gan Ning				|   					| `93`		| Immortal Blade		| Huang Zhong		|
-`26`		| Wing Blade					| Gan Ning				|  						| `94`		| Battle Master Blade	| Huang Zhong		|
-`27`		| Elder Sword					| Sun Jian				|   					| `95`		| Princeps Blade		| Huang Zhong		|
-`28`		| Nine Hook Sword				| Sun Jian				|   					| `96`		| The Awakener			| Wei Yan			|
-`29`		| Golden Pheonix				| Sun Jian				|    					| `97`		| Bone Splitter			| Wei Yan			|
-`30`		| Dragon Spike					| Zhao Yun				|    					| `98`		| Stormhowl				| Wei Yan			|
-`31`		| Dragon Fang					| Zhao Yun				|    					| `99`		| Blue Dragon Ji		| Guan Ping			|
-`32`		| Dragon Talon					| Zhao Yun				|     					| `100`		| Black Dragon Ji		| Guan Ping			|
-`33`		| Blue Dragon					| Guan Yu				|     					| `101`		| White Dragon Ji		| Guan Ping			|
-`34`		| Black Dragon					| Guan Yu				|     					| `102`		| Firestorm Staff		| Pang Tong			|
-`35`		| White Dragon					| Guan Yu				|      					| `103`		| Blizzard Staff		| Pang Tong			|
-`36`		| Serpent Blade					| Zhang Fei				|      					| `104`		| Typhoon Staff			| Pang Tong			|
-`37`		| Python Blade					| Zhang Fei				|      					| `105`		| Wizard Club			| Dong Zhuo			|
-`38`		| Viper Blade					| Zhang Fei				|       				| `106`		| Magus Club			| Dong Zhuo			|
-`39`		| Brilliance					| Zhuge Liang			|       				| `107`		| Augur Club			| Dong Zhuo			|
-`40`		| Distinction					| Zhuge Liang			|       				| `108`		| Sword of Kings		| Yuan Shao			|
-`41`		| Enlightenment					| Zhuge Liang			|        				| `109`		| Sword of Severity		| Yuan Shao			|
-`42`		| Strength and Virtue			| Liu Bei				|        				| `110`		| North Star Sword		| Yuan Shao			|
-`43`		| Heaven and Earth				| Liu Bei				|        				| `111`		| Blaze Staff			| Zhang Jiao		|
-`44`		| Yin and Yang					| Liu Bei				|         				| `112`		| Blight Staff			| Zhang Jiao		|
-`45`		| Moonflower					| Diao Chan				|         				| `113`		| Judgement Staff		| Zhang Jiao		|
-`46`		| Dewflower						| Diao Chan				|         				| `114`		| Allure				| Zhen Ji			|
-`47`		| Rainflower					| Diao Chan				|          				| `115`		| Charm					| Zhen Ji			|
-`48`		| Sky Piercer					| Lu Bu					|          				| `116`		| Seduction				| Zhen Ji			|
-`49`		| Demon Bane					| Lu Bu					|          				| `117`		| True Grace			| Xiao Qiao			|
-`50`		| Heron Blade Halberd			| Lu Bu					|           			| `118`		| True Beauty			| Xiao Qiao			|
-`51`		| Bone Crusher					| Xu Zhu				|           			| `119`		| True Luster			| Xiao Qiao			|
-`52`		| Chaos Crusher					| Xu Zhu				|           			| `120`		| Emerald Dew			| Yue Ying			|
-`53`		| Whirlwind Crusher				| Xu Zhu				|            			| `121`		| Emerald Veil			| Yue Ying			|
-`54`		| Heavens Destroyer				| Xiahou Yuan			|            			| `122`		| Emerald Mist			| Yue Ying			|
-`55`		| Heavens Smasher				| Xiahou Yuan			| 
-`56`		| Heavens Cutter				| Xiahou Yuan			| 
-`57`		| Destroyer						| Xu Huang				| 
-`58`		| Annihilator					| Xu Huang				| 
-`59`		| Obliterator					| Xu Huang				| 
-`60`		| Splendor						| Zhang He				| 
-`61`		| Mystery						| Zhang He				| 
-`62`		| Ostentation					| Zhang He				| 
-`63`		| Phoenix Wing					| Cao Ren				| 
-`64`		| Dragon Scale					| Cao Ren				| 
-`65`		| Tortoise Bite					| Cao Ren				| 
-`66`		| Havoc							| Cao Pi				| 
-`67`		| Mayhem						| Cao Pi				| 
+`00`		| Rock Crusher					| Xiahou Dun			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/xiahoudun-1.png)					| `68`		| Chaos					| Cao Pi			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/caopi-2.png)
+`01`		| Wave Breaker					| Xiahou Dun			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/xiahoudun-3.png)					| `69`		| Rage Trident			| Taishi Ci			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/taishici-1.png)
+`02`		| Thundersmash					| Xiahou Dun			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/xiahoudun-2.png)					| `70`		| Savage Trident		| Taishi Ci			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/taishici-3.png)
+`03`		| Violent Soul Flail			| Dian Wei				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/dianwei-1.png)					| `71`		| Tsunami Trident		| Taishi Ci			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/taishici-3-2.png)
+`04`		| Lion's Head Flail				| Dian Wei				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/dianwei-3.png)					| `72`		| Valor					| Lu Meng			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/lumeng-1.png)
+`05`		| Beserker Flail				| Dian Wei				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/dianwei-2.png)					| `73`		| Spirit				| Lu Meng			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/lumeng-3.png)
+`06`		| Eradication Claws				| Sima Ye				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/simaye-1.png) 					| `74`		| Courage				| Lu Meng			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/lumeng-2.png)
+`07`		| Anguish Claws					| Sima Ye				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/simaye-3.png)						| `75`		| River Slicer			| Huang Guai		| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/huangguai-1.png)
+`08`		| Necrosis Claws				| Sima Ye				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/simaye-2.png)						| `76`		| Mountain Breaker		| Huang Guai		| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/huangguai-3.png)
+`09`		| Twin Vipers					| Zhange Liao			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhangliao-1.png)					| `77`		| Sky Lasher			| Huang Guai		| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/huangguai-2.png)
+`10`		| Twin Dragons					| Zhange Liao			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhangliao-3.png)					| `78`		| Flashstrike			| Zhou Tai			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhoutai-1.png)
+`11`		| Twin Eagles					| Zhange Liao			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhangliao-2.png)					| `79`		| Dawnstrike			| Zhou Tai			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhoutai-3.png)
+`12`		| Sword of Heaven				| Cao Cao				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/caocao-1.png)						| `80`		| Duskstrike			| Zhou Tai			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhoutai-2.png)
+`13`		| Blue Blade					| Cao Cao				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/caocao-3.png)						| `81`		| Flying Nimbus			| Ling Tong			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/lingtong-1.png)
+`14`		| Seven Star Sword				| Cao Cao				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/caocao-2.png)						| `82`		| Rising Nimbus			| Ling Tong			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/lingtong-3.png)
+`15`		| Red Dusk						| Zhou Yu				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhouyu-1.png)						| `83`		| Lofting Nimbus		| Ling Tong			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/lingtong-2.png)
+`16`		| Dark Night					| Zhou Yu				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhouyu-3.png)						| `84`		| Tryant Strike			| Sun Ce			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/sunce-1.png)
+`17`		| Scarlet Dawn					| Zhou Yu				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhouyu-2.png) 					| `85`		| Glimmer Strike		| Sun Ce			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/sunce-3.png)
+`18`		| Silver Swallow				| Lu Xun				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/luxun-1.png) 						| `86`		| Stoic Strike			| Sun Ce			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/sunce-2.png)
+`19`		| Blue Falcon					| Lu Xun				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/luxun-3.png) 						| `87`		| Dragon's Might		| Sun Quan			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/sunquan-1.png)
+`20`		| Jade Warbler					| Lu Xun				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/luxun-2.png)  					| `88`		| Heaven's Might		| Sun Quan			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/sunquan-3.png)
+`21`		| Madder Rose					| Sun Shang Xiang		| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/ssx-1.png)  						| `89`		| Tiatan's Might		| Sun Quan			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/sunquan-2.png)
+`22`		| Wisteria Breeze				| Sun Shang Xiang		| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/ssx-3.png)  						| `90`		| Ironhorse Glaive		| Ma Chao			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/machao-1.png)
+`23`		| Lotus Bow						| Sun Shang Xiang		| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/ssx-2.png)  						| `91`		| Dragonrun Glaive		| Ma Chao			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/machao-3.png)
+`24`		| Crescent Moon					| Gan Ning				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/ganning-1.png)  					| `92`		| Warsteed Glaive		| Ma Chao			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/machao-2.png)
+`25`		| Dancing Dragon				| Gan Ning				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/ganning-3.png)  					| `93`		| Immortal Blade		| Huang Zhong		| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/huangzhong-1.png)
+`26`		| Wing Blade					| Gan Ning				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/ganning-2.png) 					| `94`		| Battle Master Blade	| Huang Zhong		| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/huangzhong-3.png)
+`27`		| Elder Sword					| Sun Jian				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/sunjian-1.png)  					| `95`		| Princeps Blade		| Huang Zhong		| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/huangzhong-2.png)
+`28`		| Nine Hook Sword				| Sun Jian				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/sunjian-3.png)  					| `96`		| The Awakener			| Wei Yan			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/weiyan-1.png)
+`29`		| Golden Pheonix				| Sun Jian				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/sunjian-2.png)   					| `97`		| Bone Splitter			| Wei Yan			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/weiyan-3.png)
+`30`		| Dragon Spike					| Zhao Yun				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhaoyun-1.png)   					| `98`		| Stormhowl				| Wei Yan			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/weiyan-2.png)
+`31`		| Dragon Fang					| Zhao Yun				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhaoyun-3.png)   					| `99`		| Blue Dragon Ji		| Guan Ping			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/guanping-1.png)
+`32`		| Dragon Talon					| Zhao Yun				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhaoyun-2.png)    				| `100`		| Black Dragon Ji		| Guan Ping			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/guanping-3.png)
+`33`		| Blue Dragon					| Guan Yu				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/guanyu-1.png)    					| `101`		| White Dragon Ji		| Guan Ping			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/guanping-2.png)
+`34`		| Black Dragon					| Guan Yu				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/guanyu-3.png)    					| `102`		| Firestorm Staff		| Pang Tong			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/pangtong-1.png)
+`35`		| White Dragon					| Guan Yu				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/guanyu-2.png)     				| `103`		| Blizzard Staff		| Pang Tong			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/pangtong-3.png)
+`36`		| Serpent Blade					| Zhang Fei				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhangfei-1.png)     				| `104`		| Typhoon Staff			| Pang Tong			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/pangtong-2.png)
+`37`		| Python Blade					| Zhang Fei				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhangfei-3.png)     				| `105`		| Wizard Club			| Dong Zhuo			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/dongzhuo-1.png)
+`38`		| Viper Blade					| Zhang Fei				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhangfei-2.png)      				| `106`		| Magus Club			| Dong Zhuo			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/dongzhuo-3.png)
+`39`		| Brilliance					| Zhuge Liang			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhugeliang-1.png)      			| `107`		| Augur Club			| Dong Zhuo			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/dongzhuo-2.png)
+`40`		| Distinction					| Zhuge Liang			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhugeliang-3.png)      			| `108`		| Sword of Kings		| Yuan Shao			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/yuanshao-1.png)
+`41`		| Enlightenment					| Zhuge Liang			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhugeliang-2.png)       			| `109`		| Sword of Severity		| Yuan Shao			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/yuanshao-3.png)
+`42`		| Strength and Virtue			| Liu Bei				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/liubei-1.png)       				| `110`		| North Star Sword		| Yuan Shao			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/yuanshao-2.png)
+`43`		| Heaven and Earth				| Liu Bei				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/liubei-3.png)       				| `111`		| Blaze Staff			| Zhang Jiao		| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhangjiao-1.png)
+`44`		| Yin and Yang					| Liu Bei				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/liubei-2.png)        				| `112`		| Blight Staff			| Zhang Jiao		| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhangjiao-3.png)
+`45`		| Moonflower					| Diao Chan				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/diaochan-1.png)        			| `113`		| Judgement Staff		| Zhang Jiao		| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhangjiao-2.png)
+`46`		| Dewflower						| Diao Chan				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/diaochan-3.png)        			| `114`		| Allure				| Zhen Ji			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhenji-1.png)
+`47`		| Rainflower					| Diao Chan				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/diaochan-2.png)         			| `115`		| Charm					| Zhen Ji			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhenji-3.png)
+`48`		| Sky Piercer					| Lu Bu					| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/lubu-1.png)         				| `116`		| Seduction				| Zhen Ji			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhenji-2.png)
+`49`		| Demon Bane					| Lu Bu					| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/lubu-3.png)         				| `117`		| True Grace			| Xiao Qiao			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/xq-1.png)
+`50`		| Heron Blade Halberd			| Lu Bu					| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/lubu-2.png)          				| `118`		| True Beauty			| Xiao Qiao			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/xq-3.png)
+`51`		| Bone Crusher					| Xu Zhu				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/xuzhu-1.png)          			| `119`		| True Luster			| Xiao Qiao			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/xq-2.png)
+`52`		| Chaos Crusher					| Xu Zhu				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/xuzhu-3.png)          			| `120`		| Emerald Dew			| Yue Ying			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/yueying-1.png)
+`53`		| Whirlwind Crusher				| Xu Zhu				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/xuzhu-2.png)           			| `121`		| Emerald Veil			| Yue Ying			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/yueying-3.png)
+`54`		| Heavens Destroyer				| Xiahou Yuan			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/xiahouyuan-1.png)           		| `122`		| Emerald Mist			| Yue Ying			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/yueying-2.png)
+`55`		| Heavens Smasher				| Xiahou Yuan			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/xiahouyuan-3.png)
+`56`		| Heavens Cutter				| Xiahou Yuan			| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/xiahouyuan-2.png)
+`57`		| Destroyer						| Xu Huang				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/xuhuang-1.png)
+`58`		| Annihilator					| Xu Huang				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/xuhuang-3.png)
+`59`		| Obliterator					| Xu Huang				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/xuhuang-2.png)
+`60`		| Splendor						| Zhang He				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhanghe-1.png)
+`61`		| Mystery						| Zhang He				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhanghe-3.png)
+`62`		| Ostentation					| Zhang He				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/zhanghe-2.png)
+`63`		| Phoenix Wing					| Cao Ren				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/caoren-1.png)
+`64`		| Dragon Scale					| Cao Ren				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/caoren-3.png)
+`65`		| Tortoise Bite					| Cao Ren				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/caoren-2.png)
+`66`		| Havoc							| Cao Pi				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/caopi-1.png)
+`67`		| Mayhem						| Cao Pi				| ![](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/weapon-img/caopi-3.png)
 
 
