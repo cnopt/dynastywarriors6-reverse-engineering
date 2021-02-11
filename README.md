@@ -658,7 +658,7 @@ damage to fall into. It is affected by the `id`, in that a lower-tier weapon wil
 
 #### Weapon IDs
 
-This table is pretty interesting, since you can pinpoint exact moment they stopped giving a shit about different weapon models
+This table is pretty interesting, since you can pinpoint the exact moment they stopped giving a shit about different weapon models
 for each of the tiers. **From Xu Zhu onwards**, the first, second, and third weapons all share the same model.
 
 | Value		| Name							| Officer				| Image																													| Value		| Name					| Officer			| Image
@@ -735,8 +735,24 @@ for each of the tiers. **From Xu Zhu onwards**, the first, second, and third wea
 
 This of course lends itself to swapping weapons between officers, *without* the risk of irreversibly fucking up your 
 character's inventory/weapons permenantly, as is the case with the stat transfer method earlier. If you simply navigate through
-your officer's weapon slots 16 bytes at a time, starting from their `id`, you can fill up your invetory with a bunch
+your officer's weapon slots 16 bytes at a time, starting from their `id`, you can fill up your inventory with a bunch
 of different weapons that you're absolutely not supposed to be using.
+
+
+#### Damage
+
+This `damage` address seems to function as an offset to add to the weapon's base damage. As you might expect, third-tier
+weapons have a higher base damage than first-tier ones. For example, Guan Yu's 'Blue Dragon' with a damage value of `0`
+results in a weapon with 60 damage. Increasing this value to `06` changes the weapon's damage to 66. Keeping this value
+at `06` and changing the `id` of the weapon to `33`, i.e. his third-tier weapon, gives us 70 damage. Reverting the `damage`
+back to `0`, it goes down to 64 - still higher than the base damage of his first-tier blade. 
+
+* The maximum value seems to be `32` - the UI can't display a higher value than 100 damage. The game might still keep track of it, though.
+* This base damage doesn't change across officers/levels
+
+An officer's second-tier weapon actually has a lower base power, since these weapons instead favour attack speed. Of course,
+increasing the `damage` value can easily solve this. Sadly, the `speed` and `range` of a weapon aren't stored in save data.
+
 
 
 #### Skills

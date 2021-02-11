@@ -36,7 +36,7 @@ DoneState = true
     <CheatEntry>
       <ID>1</ID>
       <Description>"[volatile] current kills in session"</Description>
-      <LastState Value="0" RealAddress="007B2938"/>
+      <LastState Value="100" RealAddress="007B2938"/>
       <Color>C080FF</Color>
       <VariableType>4 Bytes</VariableType>
       <Address>007B2938</Address>
@@ -44,7 +44,7 @@ DoneState = true
     <CheatEntry>
       <ID>7</ID>
       <Description>"[volatile] current xp in session"</Description>
-      <LastState Value="0" RealAddress="007750B0"/>
+      <LastState Value="99999" RealAddress="007750B0"/>
       <Color>C080FF</Color>
       <VariableType>4 Bytes</VariableType>
       <Address>DW6_WIN.exe+3750B0</Address>
@@ -52,7 +52,7 @@ DoneState = true
     <CheatEntry>
       <ID>91</ID>
       <Description>"[volatile] current highest chain"</Description>
-      <LastState Value="0" RealAddress="007B2958"/>
+      <LastState Value="120" RealAddress="007B2958"/>
       <Color>C080FF</Color>
       <VariableType>4 Bytes</VariableType>
       <Address>007B2958</Address>
@@ -68,7 +68,7 @@ DoneState = true
     <CheatEntry>
       <ID>114</ID>
       <Description>"[volatile] current kill XP"</Description>
-      <LastState Value="0" RealAddress="007B2948"/>
+      <LastState Value="100" RealAddress="007B2948"/>
       <Color>C080FF</Color>
       <VariableType>4 Bytes</VariableType>
       <Address>007B2948</Address>
@@ -76,7 +76,7 @@ DoneState = true
     <CheatEntry>
       <ID>136</ID>
       <Description>"Current weapon selected (Slot 0-7)"</Description>
-      <LastState Value="0" RealAddress="007750B8"/>
+      <LastState Value="7" RealAddress="007750B8"/>
       <Color>FF00FF</Color>
       <VariableType>4 Bytes</VariableType>
       <Address>007750B8</Address>
@@ -84,7 +84,7 @@ DoneState = true
     <CheatEntry>
       <ID>137</ID>
       <Description>"Current horse selected (0-8)"</Description>
-      <LastState Value="00000008" RealAddress="007756BC"/>
+      <LastState Value="00000000" RealAddress="007756BC"/>
       <ShowAsHex>1</ShowAsHex>
       <Color>FF00FF</Color>
       <VariableType>4 Bytes</VariableType>
@@ -144,6 +144,41 @@ DoneState = true
           <Color>008000</Color>
           <VariableType>4 Bytes</VariableType>
           <Address>007B3CFC</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>166</ID>
+          <Description>"zhao yun 1st weapon damage"</Description>
+          <LastState Value="30" RealAddress="007B3C7C"/>
+          <VariableType>Byte</VariableType>
+          <Address>007B3C7C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>167</ID>
+          <Description>"zhao yun 1st weapon element"</Description>
+          <LastState Value="0" RealAddress="007B3C80"/>
+          <VariableType>Byte</VariableType>
+          <Address>007B3C80</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>168</ID>
+          <Description>"zhao yun 1st weapon skills"</Description>
+          <LastState Value="604" RealAddress="007B3C84"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>007B3C84</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>169</ID>
+          <Description>"zhao yun 1st weapon id"</Description>
+          <LastState Value="31" RealAddress="007B3C78"/>
+          <VariableType>Byte</VariableType>
+          <Address>007B3C78</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>170</ID>
+          <Description>"zhao yun current weapon id"</Description>
+          <LastState Value="58" RealAddress="007B3CE8"/>
+          <VariableType>Byte</VariableType>
+          <Address>007B3CE8</Address>
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>
@@ -1188,62 +1223,6 @@ DoneState = true
       <ZeroTerminate>1</ZeroTerminate>
       <Address>06B9E827</Address>
     </CheatEntry>
-    <CheatEntry>
-      <ID>163</ID>
-      <Description>"zhao yun weapon damage"</Description>
-      <LastState Value="3" RealAddress="007B3CAC"/>
-      <VariableType>4 Bytes</VariableType>
-      <Address>007B3CAC</Address>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>164</ID>
-      <Description>"zhao yun weapon element"</Description>
-      <LastState Value="7" RealAddress="007B3CB0"/>
-      <VariableType>4 Bytes</VariableType>
-      <Address>007B3CB0</Address>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>165</ID>
-      <Description>"zhao yun weapon skills"</Description>
-      <LastState Value="0" RealAddress="007B3CB4"/>
-      <VariableType>4 Bytes</VariableType>
-      <Address>007B3CB4</Address>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>166</ID>
-      <Description>"zhao yun 1st weapon damage"</Description>
-      <LastState Value="30" RealAddress="007B3C7C"/>
-      <VariableType>Byte</VariableType>
-      <Address>007B3C7C</Address>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>167</ID>
-      <Description>"zhao yun 1st weapon element"</Description>
-      <LastState Value="0" RealAddress="007B3C80"/>
-      <VariableType>Byte</VariableType>
-      <Address>007B3C80</Address>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>168</ID>
-      <Description>"zhao yun 1st weapon skills"</Description>
-      <LastState Value="604" RealAddress="007B3C84"/>
-      <VariableType>4 Bytes</VariableType>
-      <Address>007B3C84</Address>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>169</ID>
-      <Description>"zhao yun 1st weapon id"</Description>
-      <LastState Value="31" RealAddress="007B3C78"/>
-      <VariableType>Byte</VariableType>
-      <Address>007B3C78</Address>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>170</ID>
-      <Description>"zhao yun current weapon id"</Description>
-      <LastState Value="58" RealAddress="007B3CE8"/>
-      <VariableType>Byte</VariableType>
-      <Address>007B3CE8</Address>
-    </CheatEntry>
   </CheatEntries>
   <CheatCodes>
     <CodeEntry>
@@ -2035,18 +2014,17 @@ DoneState = true
   <LuaScript>[ENABLE]
 DoneState = false
 local addr = 0x007B3CE8
+local counter = 01
 local val = 01
 local function timer_tick(timer)
+  counter = counter+01
   writeInteger(addr, val + readInteger(addr))
-  if DoneState == true then
+  if counter &gt; 10 then
     timer.destroy()
   end
 end
 local someTimer = createTimer(MainForm)
 someTimer.Interval = 10000
 someTimer.OnTimer = timer_tick
-
-[DISABLE]
-DoneState = true
 </LuaScript>
 </CheatTable>
