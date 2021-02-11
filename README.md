@@ -643,7 +643,15 @@ then navigated to Lu Xun's block:
 To ~~double~~ ~~triple~~ quadruple check, I deleted my save and started fresh, and sure enough the value was set back to `06`. 
 I must have been fucking around with what I thought was the stat weighting, and accidentally saved the game at some point.
 
+---
 
+### Weapons
+
+Weapons are stored in blocks of 16 bytes, before each character's general stats. It consists of the following:
+
+* `weapon id` - a unique identifier for the weapon that the officer wields. This value is specific to even the level of
+the weapon.#, i.e. Zhao Yun's second-level weapon 'Dragon Spike' is a different value to Zhao Yun's 'Dragon Fang'.
+* `weapon damage` - 
 
 
 
