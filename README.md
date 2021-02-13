@@ -415,7 +415,11 @@ is full of `00`'s, it can be hard to find specific officers, without a definitiv
 
 ![lu bu hex stat block](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_16.png)
 
-
+Even if this scenario, when it's difficult to find a specific officer, there are some values that can be used
+to instantly determine what you're looking at. First, of course, is the officer `id`. Second, are their `weapon id`'s.
+This is actually easier, since there will either be a sequence of 8 of them in a row, or *one* unique value followed by
+a sequence of `AE`'s, since this is the value the game uses to represent a blank weapon. If you've not used the officer before,
+or they only have a single weapon, look for those.
 
 
 
