@@ -396,21 +396,25 @@ without doing any of the required objectives.
 
 Officer data is structured in the following order:
 
-1. Skills (7 bytes)
-2. Weapon data/storage
-	1. Weapon id (4 bytes)
-	2. Damage offset (4 bytes)
-	3. Element (4 bytes)
-	4. Skills (4 bytes)
-3. Officer id
-4. Equipped outfit
-5. Title
-6. Level
-7. XP
-8. Kills
-9. Unlock status
+1. Skills tree *(7 bytes)*
+2. Weapon data/storage *(128 bytes total, 8 weapons)*
+	1. Weapon id *(4 bytes)*
+	2. Damage offset *(4 bytes)*
+	3. Element *(4 bytes)*
+	4. Skills *(4 bytes)*
+3. Officer id *(4 bytes)*
+4. Equipped outfit *(4 bytes)*
+5. Title *(4 bytes)*
+6. Level *(4 bytes)*
+7. XP *(4 bytes)*
+8. Kills *(4 bytes)*
+9. Unlock status *(4 bytes)*
 
-To illustrate, here's a picture of base-level Lu Bu. No skills, no XP, no kills, no weapons, etc.
+To illustrate, here's the stat block of base-level Lu Bu. No skills, no XP, no kills, no weapons, etc. Since everything
+is full of `00`'s, it can be hard to find specific officers, without a definitive value that's probably unique (such as their XP).
+
+![lu bu hex stat block](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_16.png)
+
 
 
 
