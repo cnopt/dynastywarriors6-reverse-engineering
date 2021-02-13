@@ -28,7 +28,7 @@ class Program
         // playable officers = 41, officer stat block = 168 bytes, 168*41 = 6888
 
 
-        string file = @"C:\Users\TTGCh\Desktop\dw6-saves\completed-save.dat";
+        string file = @"C:\Users\TTGCh\Desktop\dw6-saves\save.dat";
         //string officer = args[0];
         int numBytes = 4;
         byte[] test = new byte[numBytes];
@@ -75,7 +75,7 @@ class Program
             {37, "Zhang Jiao"},
             {38, "Zhen Ji"},
             {39, "Xiao Qiao"},
-            {40, "Yue Ying"},
+            {40, "Yue Ying"}
         };
         var titleDict = new Dictionary<int, string>()
         {
@@ -93,7 +93,14 @@ class Program
             int costumeBaseStart    = 3040;
             int titleBaseStart      = 3044;
             int levelBaseStart      = 3048;
-            int weaponsBaseStart    = 2908;
+            int weapon1BaseStart    = 2908;
+            int weapon2BaseStart    = 2924;
+            int weapon3BaseStart    = 2940;
+            int weapon4BaseStart    = 2956;
+            int weapon5BaseStart    = 2972;
+            int weapon6BaseStart    = 2988;
+            int weapon7BaseStart    = 3004;
+            int weapon8BaseStart    = 3020;
 
             for (int i = 0; i < 6888; i++)
             {
@@ -102,7 +109,7 @@ class Program
 
                 reader.BaseStream.Seek(idBaseStart + i, SeekOrigin.Begin);
                 reader.Read(test, 0, 4);
-                Console.WriteLine("officer: " + (reader.ReadInt32()));
+                Console.WriteLine("officer: " + (officerDict[reader.ReadInt32()]));
 
                 reader.BaseStream.Seek(xpBaseStart + i, SeekOrigin.Begin);
                 reader.Read(test, 0, 4);
@@ -124,10 +131,38 @@ class Program
                 reader.Read(test, 0, 4);
                 Console.WriteLine("costume: " + reader.ReadInt32());
 
-                reader.BaseStream.Seek(weaponsBaseStart + i, SeekOrigin.Begin);
-                reader.Read(test, 0, 4);
-                Console.WriteLine("weapons: " + reader.ReadInt32());
 
+                reader.BaseStream.Seek(weapon1BaseStart + i, SeekOrigin.Begin);
+                reader.Read(test, 0, 4);
+                Console.WriteLine("weapon 1: " + reader.ReadInt32());
+
+                reader.BaseStream.Seek(weapon2BaseStart + i, SeekOrigin.Begin);
+                reader.Read(test, 0, 4);
+                Console.WriteLine("weapon 2: " + reader.ReadInt32());
+
+                reader.BaseStream.Seek(weapon3BaseStart + i, SeekOrigin.Begin);
+                reader.Read(test, 0, 4);
+                Console.WriteLine("weapon 3: " + reader.ReadInt32());
+
+                reader.BaseStream.Seek(weapon4BaseStart + i, SeekOrigin.Begin);
+                reader.Read(test, 0, 4);
+                Console.WriteLine("weapon 4: " + reader.ReadInt32());
+
+                reader.BaseStream.Seek(weapon5BaseStart + i, SeekOrigin.Begin);
+                reader.Read(test, 0, 4);
+                Console.WriteLine("weapon 5: " + reader.ReadInt32());
+
+                reader.BaseStream.Seek(weapon6BaseStart + i, SeekOrigin.Begin);
+                reader.Read(test, 0, 4);
+                Console.WriteLine("weapon 6: " + reader.ReadInt32());
+
+                reader.BaseStream.Seek(weapon7BaseStart + i, SeekOrigin.Begin);
+                reader.Read(test, 0, 4);
+                Console.WriteLine("weapon 7: " + reader.ReadInt32());
+
+                reader.BaseStream.Seek(weapon8BaseStart + i, SeekOrigin.Begin);
+                reader.Read(test, 0, 4);
+                Console.WriteLine("weapon 8: " + reader.ReadInt32());
 
 
                 Console.WriteLine("********* \n\n");
