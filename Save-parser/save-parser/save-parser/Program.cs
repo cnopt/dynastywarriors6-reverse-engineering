@@ -33,6 +33,11 @@ class Program
         int numBytes = 4;
         byte[] test = new byte[numBytes];
 
+        var officerDict = new Dictionary<int, string>()
+        {
+            {10, "Xiahou Dun" }
+        };
+
 
         using (BinaryReader reader = new BinaryReader(new FileStream(file, FileMode.Open)))
         {
@@ -51,7 +56,7 @@ class Program
 
                 reader.BaseStream.Seek(idBaseStart + i, SeekOrigin.Begin);
                 reader.Read(test, 0, 4);
-                Console.WriteLine("officer: " + DecodeOfficerId(reader.ReadInt32()));
+                Console.WriteLine("officer: " + (officerDict[reader.ReadInt32()]));
 
                 reader.BaseStream.Seek(xpBaseStart + i, SeekOrigin.Begin);
                 reader.Read(test, 0, 4);
@@ -133,8 +138,7 @@ class Program
         //    Console.Write(hex);   
         //}
 
-
-
+        
         while (true) ;
 
     }
@@ -146,6 +150,11 @@ class Program
 
         else
             return "idk";
+    }
+
+    static string DecodeOfficerTitle(int title)
+    {
+        return "idk";
     }
 }
 
