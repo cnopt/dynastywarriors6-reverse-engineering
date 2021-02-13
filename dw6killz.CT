@@ -36,7 +36,7 @@ DoneState = true
     <CheatEntry>
       <ID>1</ID>
       <Description>"[volatile] current kills in session"</Description>
-      <LastState Value="43" RealAddress="007B2938"/>
+      <LastState Value="0" RealAddress="007B2938"/>
       <Color>C080FF</Color>
       <VariableType>4 Bytes</VariableType>
       <Address>007B2938</Address>
@@ -44,7 +44,7 @@ DoneState = true
     <CheatEntry>
       <ID>7</ID>
       <Description>"[volatile] current xp in session"</Description>
-      <LastState Value="99999" RealAddress="007750B0"/>
+      <LastState Value="0" RealAddress="007750B0"/>
       <Color>C080FF</Color>
       <VariableType>4 Bytes</VariableType>
       <Address>DW6_WIN.exe+3750B0</Address>
@@ -52,7 +52,7 @@ DoneState = true
     <CheatEntry>
       <ID>91</ID>
       <Description>"[volatile] current highest chain"</Description>
-      <LastState Value="32" RealAddress="007B2958"/>
+      <LastState Value="0" RealAddress="007B2958"/>
       <Color>C080FF</Color>
       <VariableType>4 Bytes</VariableType>
       <Address>007B2958</Address>
@@ -60,7 +60,7 @@ DoneState = true
     <CheatEntry>
       <ID>113</ID>
       <Description>"[volatile] current XP pouches"</Description>
-      <LastState Value="200" RealAddress="007B2944"/>
+      <LastState Value="0" RealAddress="007B2944"/>
       <Color>C080FF</Color>
       <VariableType>4 Bytes</VariableType>
       <Address>007B2944</Address>
@@ -76,7 +76,7 @@ DoneState = true
     <CheatEntry>
       <ID>136</ID>
       <Description>"Current weapon selected (Slot 0-7)"</Description>
-      <LastState Value="5" RealAddress="007750B8"/>
+      <LastState Value="0" RealAddress="007750B8"/>
       <Color>FF00FF</Color>
       <VariableType>4 Bytes</VariableType>
       <Address>007750B8</Address>
@@ -670,7 +670,7 @@ DoneState = true
         <CheatEntry>
           <ID>100</ID>
           <Description>"[base] Lu Xun XP"</Description>
-          <LastState Value="30000" RealAddress="007B3A68"/>
+          <LastState Value="47046" RealAddress="007B3A68"/>
           <Color>000080</Color>
           <VariableType>4 Bytes</VariableType>
           <Address>007B3A68</Address>
@@ -678,7 +678,7 @@ DoneState = true
         <CheatEntry>
           <ID>99</ID>
           <Description>"[base] Lu Xun Kills"</Description>
-          <LastState Value="100" RealAddress="007B3A6C"/>
+          <LastState Value="1010" RealAddress="007B3A6C"/>
           <Color>000080</Color>
           <VariableType>4 Bytes</VariableType>
           <Address>7B3A6C</Address>
@@ -686,7 +686,7 @@ DoneState = true
         <CheatEntry>
           <ID>102</ID>
           <Description>"[base] Lu Xun Title"</Description>
-          <LastState Value="8" RealAddress="007B3A60"/>
+          <LastState Value="95" RealAddress="007B3A60"/>
           <Color>000080</Color>
           <VariableType>4 Bytes</VariableType>
           <Address>007B3A60</Address>
@@ -702,7 +702,7 @@ DoneState = true
         <CheatEntry>
           <ID>101</ID>
           <Description>"[base] Lu Xun Level"</Description>
-          <LastState Value="24" RealAddress="007B3A64"/>
+          <LastState Value="31" RealAddress="007B3A64"/>
           <Color>000080</Color>
           <VariableType>4 Bytes</VariableType>
           <Address>007B3A64</Address>
@@ -1142,7 +1142,7 @@ DoneState = true
     <CheatEntry>
       <ID>138</ID>
       <Description>"horse selection region"</Description>
-      <LastState Value="F803F803" RealAddress="0789D8B4"/>
+      <LastState Value="00000000" RealAddress="0789D8B4"/>
       <ShowAsHex>1</ShowAsHex>
       <VariableType>4 Bytes</VariableType>
       <Address>0789D8B4</Address>
@@ -1150,14 +1150,14 @@ DoneState = true
     <CheatEntry>
       <ID>139</ID>
       <Description>"No description"</Description>
-      <LastState Value="0" RealAddress="0757CE70"/>
+      <LastState Value="16777215" RealAddress="0757CE70"/>
       <VariableType>4 Bytes</VariableType>
       <Address>0757CE70</Address>
     </CheatEntry>
     <CheatEntry>
       <ID>140</ID>
       <Description>"maybe height"</Description>
-      <LastState Value="1.905765911E-43" RealAddress="0757D054"/>
+      <LastState Value="2.350988562E-38" RealAddress="0757D054"/>
       <VariableType>Float</VariableType>
       <Address>0757D054</Address>
     </CheatEntry>
@@ -1243,6 +1243,20 @@ DoneState = true
       <LastState Value="99999" RealAddress="007B4050"/>
       <VariableType>4 Bytes</VariableType>
       <Address>007B4050</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>175</ID>
+      <Description>"zhuge liang unlocked"</Description>
+      <LastState Value="1" RealAddress="007B3F0C"/>
+      <VariableType>Byte</VariableType>
+      <Address>007B3F0C</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>176</ID>
+      <Description>"start of lu bu skills"</Description>
+      <LastState Value="255" RealAddress="007B4060"/>
+      <VariableType>Byte</VariableType>
+      <Address>007B4060</Address>
     </CheatEntry>
   </CheatEntries>
   <CheatCodes>
