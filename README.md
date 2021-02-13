@@ -101,7 +101,10 @@ Memory addresses that house various values I've managed to find.
 | `007B3B00`             | Stat weighting
 | `007B3B04`            | Equipped outfit
 
-### Officer titles
+### Officers
+
+#### Titles
+
 Officer's titles seem to be linked to their Level, however editing their Level in-memory does not seem to alter their title,
 or vice versa. Theres also a total of 154 titles, whereas an officer's max level is 50, so there may be multiple factors.
 This title does not seem to be linked to kills, either. Maybe there's 3 different titles for each level?
@@ -278,7 +281,7 @@ Yuan Shao	| Field General		| Gate General		| Lt. Foot General		| 4th Crusher Gen
 Guan Ping	| Field General		| Gate General		| Lt. Crusher General	| 3rd Guard General		|  Lt. Guard General
 
 
-### Stat weighting
+#### Stat weighting
 
 This value affects the distribution of the officer's stats: `Life`, `Musou`, `Attack`, and `Defense`. Strangley it also affects the total
 points used to distribute these values, i.e. a value of `05` gives a total of 1,079 points to distibute between these four stats, whereas a value of
@@ -346,7 +349,7 @@ their own stats, however does **not** seem to reverse the weapon model+inventory
 Setting every officer's value to `10`, the same as Zhao Yun's, then completing a stage with him, did **not** result in the same effect happening, like I thought it would.
 
 
-### Skills
+#### Skills
 
 Each officer has a unique skill tree, and not all of them have the same overall amount of skills to unlock. By level 50,
 or sooner, an officer will have all skills unlocked. The game keeps track of the number of skills unlocked in the officer's
@@ -363,7 +366,7 @@ about how to unlock *individual* skills within the tree, as there  doesn't seem 
 
 
 
-### Unlocking officers
+#### Unlocking officers
 
 I compared two	`save.dat` files - one before unlocking an officer, and the second after unlocking Xu Huang. I was hoping to find a simple change from a `00` i.e. not unlocked false,
 to a `01` somewhere. Among other changes, presumably because the game keeps track of the objectives necessary to unlock each officer, there was indeed a simple `00` -> `01` change at address `1874`.
@@ -416,7 +419,7 @@ Trying the opposite end of the spectrum:
 Sadly this doesn't result in a 300mph horse. In fact, it doesn't alter any of the stats in any meaningful way above `500`.
 
 
-#### Warhorse data
+#### Warhorse names
 
 Oh boy, warhorses also have their own pool of names. Two of them. And their own titles. And their own two-part descriptions. All of which are randomly generated.
 Their `prefix` and `suffix` values are stored right next to eachother.
@@ -455,7 +458,7 @@ Their `prefix` and `suffix` values are stored right next to eachother.
 The system does lead to some interesting/cool names, even when randomly generated, such as Cosmic Titan, or Valiant Emperor.
 If you want just one of these names without the prefix or suffix, you can put either of the values above `31` and it'll be blank.
 
-##### Models
+#### Models
 
 | #			| Model																				| #			| Model																						| #			| Model																					| #			| Model
 | --------	| -----------																		| --------	| ---------																				| --------	| --------																				| -------	| ---------
@@ -464,12 +467,12 @@ If you want just one of these names without the prefix or suffix, you can put ei
 `03`		| ![h3](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h3.png)| `07`	    | ![h7](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h7.png) 	| `11`	    | ![h11](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h11.png)	| `15`		| ![h15](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h15.png)
 `04`		| ![h4](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h4.png)| `08`	    | ![h8](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h8.png) 	| `12`	    | ![h12](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/h12.png)	| 
 
-##### Elements
+#### Elements
 
 A horse has the chance to have an elemental ability tied to it, but there's only 3 of them: `Fire`, `Lightning`, and `Ice`.
 Each of these elements has a chance to bind to any officers/peons you run over with your horse. But nothing crazy.
 
-##### Description(s)
+#### Description(s)
 
 A horse's description in this game consists of two parts - their **eyes** and their **physique**. That's all it comes down to.
 These are two different values in memory, meaning, like their names, they can be mix and matched. These descriptors tell you about the horse's
@@ -484,7 +487,7 @@ Once you've got a horse with these descriptors, and raised it to level 5, it's m
 However, according to [this](https://www.xboxachievements.com/forum/topic/50264-red-hare/) post, it's not a *true* red hare unless
 it also has the "Wind Spirit" skill, since that makes its speed that of the true Red Hare.
 
-###### Eyes
+##### Eyes
 | Value				| Description
 | -----				| -----
 `00`				| Gaze into the distance
@@ -492,7 +495,7 @@ it also has the "Wind Spirit" skill, since that makes its speed that of the true
 `07`				| View the world in clarity
 `15`				| **Consider the world**
 
-###### Physique
+##### Physique
 | Value				| Description
 | -----				| -----
 `00`				| Harbors untold power
@@ -503,7 +506,7 @@ it also has the "Wind Spirit" skill, since that makes its speed that of the true
 
 
 
-##### Skills
+#### Skills
 
 A horse can come with a set of 1-4 skills. Or no skills. This too is determined by a single value in the horse's save data block.
 It follows a pattern/logic, in that the skills stack on top eachother and then reset with a new 'base' skill.
@@ -615,7 +618,7 @@ I changed the byte of the officer now in second position (i.e. Lu Bu) from `10` 
 
 Just to experiment, I put this 'id' to a stupid number, in this case 147:
 ![Rampage high score](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_4.png) <br>
-**Who the hell is Jiang Qin. Must be a generic officer.**
+*Who the hell is Jiang Qin. Must be a generic officer.*
 
 
 Interestingly, in 7th position is Zhang Fei. After his high score is `0C` - 16. Since I'm thinking this looks like
