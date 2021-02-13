@@ -421,6 +421,9 @@ This is actually easier, since there will either be a sequence of 8 of them in a
 a sequence of `AE`'s, since this is the value the game uses to represent a blank weapon. If you've not used the officer before,
 or they only have a single weapon, look for those.
 
+In the above screenshot, Lu Bu's is identificable by the `id` being `10` (16), and his first weapon having an `id` of
+`30` (49). Using the table above we know that's the Sky Piercer.
+
 
 
 ---
