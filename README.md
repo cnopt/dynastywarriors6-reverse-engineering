@@ -398,10 +398,10 @@ Officer data is structured in the following order:
 
 1. Skills (7 bytes)
 2. Weapon data/storage
-	a. Weapon id (4 bytes)
-	b. Damage offset (4 bytes)
-	c. Element (4 bytes)
-	d. Skills (4 bytes)
+	1. Weapon id (4 bytes)
+	2. Damage offset (4 bytes)
+	3. Element (4 bytes)
+	4. Skills (4 bytes)
 3. Officer id
 4. Equipped outfit
 5. Title
