@@ -11,13 +11,9 @@ class Program
 {
     
 
-    static void Main()
+    static void Main(string[] args)
     {
-        R();
-    }
 
-    static void R()
-    {
         // To read data at specific byte: Address = Seek offset + number of bytes
         // i.e. to get data at offset 100 = Seek offset 99, as number of bytes is set to 1
         // if changing the size of bytes, adjust offset up or down
@@ -32,21 +28,63 @@ class Program
         // playable officers = 41, officer stat block = 168 bytes, 168*41 = 6888
 
 
-        string file = @"C:\Users\TTGCh\Desktop\dw6-saves\new-save.dat";
+        string file = @"C:\Users\TTGCh\Desktop\dw6-saves\save.dat";
+        //string officer = args[0];
         int numBytes = 4;
         byte[] test = new byte[numBytes];
 
 
         using (BinaryReader reader = new BinaryReader(new FileStream(file, FileMode.Open)))
         {
-            int baseStart = 3052;
+            int xpBaseStart         = 3052;
+            int idBaseStart         = 3036;
+            int killsBaseStart      = 3056;
+            int costumeBaseStart    = 3040;
+            int titleBaseStart      = 3044;
+            int levelBaseStart      = 3048;
+            int weaponsBaseStart    = 2908;
+
             for (int i = 0; i < 6888; i++)
             {
-                reader.BaseStream.Seek(baseStart+i, SeekOrigin.Begin);
+                Console.WriteLine("*********");
+
+
+                reader.BaseStream.Seek(idBaseStart + i, SeekOrigin.Begin);
                 reader.Read(test, 0, 4);
-                Console.WriteLine(reader.ReadInt32());
+                Console.WriteLine("officer: " + DecodeOfficerId(reader.ReadInt32()));
+
+                reader.BaseStream.Seek(xpBaseStart + i, SeekOrigin.Begin);
+                reader.Read(test, 0, 4);
+                Console.WriteLine("xp: " + reader.ReadInt32());
+
+                reader.BaseStream.Seek(killsBaseStart + i, SeekOrigin.Begin);
+                reader.Read(test, 0, 4);
+                Console.WriteLine("kills: " + reader.ReadInt32());
+
+                reader.BaseStream.Seek(levelBaseStart + i, SeekOrigin.Begin);
+                reader.Read(test, 0, 4);
+                Console.WriteLine("level: " + reader.ReadInt32());
+
+                reader.BaseStream.Seek(titleBaseStart + i, SeekOrigin.Begin);
+                reader.Read(test, 0, 4);
+                Console.WriteLine("title: " + reader.ReadInt32());
+
+                reader.BaseStream.Seek(costumeBaseStart + i, SeekOrigin.Begin);
+                reader.Read(test, 0, 4);
+                Console.WriteLine("costume: " + reader.ReadInt32());
+
+                reader.BaseStream.Seek(weaponsBaseStart + i, SeekOrigin.Begin);
+                reader.Read(test, 0, 4);
+                Console.WriteLine("weapons: " + reader.ReadInt32());
+
+
+
+                Console.WriteLine("********* \n\n");
+
                 i = i + 167;
             }
+
+   
 
             /*
             reader.BaseStream.Seek(4736, SeekOrigin.Begin);     // where to start reading from 
@@ -80,11 +118,8 @@ class Program
             reader.Read(test, 0, 4);
             int zhugeLiangXP = reader.ReadInt32();
             */
-       
 
 
-
-            
         }
 
         // read all
@@ -100,10 +135,18 @@ class Program
 
 
 
-
-
-
         while (true) ;
+
+    }
+
+    static string DecodeOfficerId(int id)
+    {
+        if (id == 10)
+            return "Xiahou Dun";
+
+        else
+            return "idk";
     }
 }
+
 

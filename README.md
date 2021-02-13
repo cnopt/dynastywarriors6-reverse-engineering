@@ -99,9 +99,19 @@ Memory addresses that house various values I've managed to find.
 | `007B3B08`              | Officer title
 | `007B3B0C`             | Level
 | `007B3B00`             | Stat weighting
-| `007B3B04`            | Equipped outfit
+| `007B3B04`			 | Equipped outfit
 
 ### Officers
+
+#### IDs
+
+Each officer has a unique `id` - changing this value has some unexpected effects that will be mentioned later in this document.
+
+| ID		| Officer
+| ------	| --------------------
+``
+
+
 
 #### Titles
 
@@ -422,7 +432,7 @@ a sequence of `AE`'s, since this is the value the game uses to represent a blank
 or they only have a single weapon, look for those.
 
 In the above screenshot, Lu Bu's is identificable by the `id` being `10` (16), and his first weapon having an `id` of
-`30` (49). Using the table above we know that's the Sky Piercer.
+`30` (49). Using the weapon id table we know that's the Sky Piercer.
 
 
 
