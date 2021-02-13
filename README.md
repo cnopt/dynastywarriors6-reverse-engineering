@@ -345,7 +345,23 @@ their own stats, however does **not** seem to reverse the weapon model+inventory
 
 Setting every officer's value to `10`, the same as Zhao Yun's, then completing a stage with him, did **not** result in the same effect happening, like I thought it would.
 
----
+
+### Skills
+
+Each officer has a unique skill tree, and not all of them have the same overall amount of skills to unlock. By level 50,
+or sooner, an officer will have all skills unlocked. The game keeps track of the number of skills unlocked in the officer's
+stat block, however it does so with a fucking massive 64-bit number. It's actually the first value to appear in
+a block, since everything before it is zero'd out. It's most recognisable in a maxed-out officer, since
+in Hex it'll look like this:
+
+![maxed out skill tree hex](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/Screenshot_13.png)
+
+Each of the 6 bytes is at a value of `255`. With a level 1 officer, the simplest method to achieve a full skill tree
+is to set each of these bytes to `FF`. Individually, this seems to unlock a sort of 'layer' each time. I'm still unsure
+about how to unlock *individual* skills within the tree, as there  doesn't seem to be a pattern.
+
+
+
 
 ### Unlocking officers
 
