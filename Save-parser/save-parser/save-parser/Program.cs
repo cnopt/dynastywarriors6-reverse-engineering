@@ -28,14 +28,60 @@ class Program
         // playable officers = 41, officer stat block = 168 bytes, 168*41 = 6888
 
 
-        string file = @"C:\Users\TTGCh\Desktop\dw6-saves\save.dat";
+        string file = @"C:\Users\TTGCh\Desktop\dw6-saves\completed-save.dat";
         //string officer = args[0];
         int numBytes = 4;
         byte[] test = new byte[numBytes];
 
         var officerDict = new Dictionary<int, string>()
         {
-            {10, "Xiahou Dun" }
+            {0, "Xiahou Dun"},
+            {1, "Dian Wei"},
+            {2, "Sima Yi"},
+            {3, "Zhang Liao"},
+            {4, "Cao Cao"},
+            {5, "Zhou Yu"},
+            {6, "Lu Xun"},
+            {7, "Sun Shang Xiang"},
+            {8, "Gan Ning"},
+            {9, "Sun Jian"},
+            {10, "Zhao Yun"},
+            {11, "Guan Yu"},
+            {12, "Zhang Fei"},
+            {13, "Zhuge Liang"},
+            {14, "Liu Bei"},
+            {15, "Diao Chan"},
+            {16, "Lu Bu"},
+            {17, "Xu Zhu"},
+            {18, "Xiahou Yuan"},
+            {19, "Xu Huang"},
+            {20, "Zhang He"},
+            {21, "Cao Ren"},
+            {22, "Cao Pi"},
+            {23, "Taishi Ci"},
+            {24, "Lu Meng"},
+            {25, "Huang Gai"},
+            {26, "Zhou Tai"},
+            {27, "Ling Tong"},
+            {28, "Sun Ce"},
+            {29, "Sun Quan"},
+            {30, "Ma Chao"},
+            {31, "Huang Zhong"},
+            {32, "Wei Yan"},
+            {33, "Guan Ping"},
+            {34, "Pang Tong"},
+            {35, "Dong Zhuo"},
+            {36, "Yuan Shao"},
+            {37, "Zhang Jiao"},
+            {38, "Zhen Ji"},
+            {39, "Xiao Qiao"},
+            {40, "Yue Ying"},
+        };
+        var titleDict = new Dictionary<int, string>()
+        {
+            {0, "Lt. General" },
+            {1, "Assisstant General" },
+            {2, "Field General" },
         };
 
 
@@ -56,7 +102,7 @@ class Program
 
                 reader.BaseStream.Seek(idBaseStart + i, SeekOrigin.Begin);
                 reader.Read(test, 0, 4);
-                Console.WriteLine("officer: " + (officerDict[reader.ReadInt32()]));
+                Console.WriteLine("officer: " + (reader.ReadInt32()));
 
                 reader.BaseStream.Seek(xpBaseStart + i, SeekOrigin.Begin);
                 reader.Read(test, 0, 4);
