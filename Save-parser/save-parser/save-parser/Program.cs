@@ -25,8 +25,7 @@ class Program
         // playable officers = 41, officer stat block = 168 bytes, 168*41 = 6888
 
 
-        string file = @"C:\Users\TTGCh\Desktop\dw6-saves\save.dat";
-        // string file2 = args[0]; could also maybe look for it automatically in documents folder
+        string file = args[0]; // could also maybe look for it automatically in documents folder
 
         int numBytes = 4;
         byte[] test = new byte[numBytes];
