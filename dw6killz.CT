@@ -466,7 +466,7 @@ DoneState = true
         <CheatEntry>
           <ID>80</ID>
           <Description>"[base] Xiahou Dun Stat Weighting"</Description>
-          <LastState Value="10" RealAddress="007B3668"/>
+          <LastState Value="0" RealAddress="007B3668"/>
           <Color>804000</Color>
           <VariableType>4 Bytes</VariableType>
           <Address>007B3668</Address>
@@ -523,7 +523,7 @@ DoneState = true
         <CheatEntry>
           <ID>86</ID>
           <Description>"[base] Dian Wei Stat Weighting"</Description>
-          <LastState Value="5" RealAddress="007B3710"/>
+          <LastState Value="1" RealAddress="007B3710"/>
           <Color>804000</Color>
           <VariableType>4 Bytes</VariableType>
           <Address>007B3710</Address>
@@ -580,7 +580,7 @@ DoneState = true
         <CheatEntry>
           <ID>90</ID>
           <Description>"[base] Sima Yi Stat Weighting"</Description>
-          <LastState Value="30" RealAddress="007B37B8"/>
+          <LastState Value="2" RealAddress="007B37B8"/>
           <Color>804000</Color>
           <VariableType>4 Bytes</VariableType>
           <Address>007B37B8</Address>
@@ -1150,14 +1150,14 @@ DoneState = true
     <CheatEntry>
       <ID>139</ID>
       <Description>"No description"</Description>
-      <LastState Value="16777215" RealAddress="0757CE70"/>
+      <LastState Value="1" RealAddress="0757CE70"/>
       <VariableType>4 Bytes</VariableType>
       <Address>0757CE70</Address>
     </CheatEntry>
     <CheatEntry>
       <ID>140</ID>
       <Description>"maybe height"</Description>
-      <LastState Value="2.350988562E-38" RealAddress="0757D054"/>
+      <LastState Value="0" RealAddress="0757D054"/>
       <VariableType>Float</VariableType>
       <Address>0757D054</Address>
     </CheatEntry>
@@ -1254,7 +1254,7 @@ DoneState = true
     <CheatEntry>
       <ID>176</ID>
       <Description>"start of lu bu skills"</Description>
-      <LastState Value="255" RealAddress="007B4060"/>
+      <LastState Value="0" RealAddress="007B4060"/>
       <VariableType>Byte</VariableType>
       <Address>007B4060</Address>
     </CheatEntry>
