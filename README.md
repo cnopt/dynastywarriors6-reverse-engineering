@@ -159,11 +159,21 @@ allows you to benefit from this skill on any other character. You'll also benefi
 blast through stages on horseback.
 
 
-With all of those things in mind, here's a Peasant with Zhao Yun's Dragon Fang, using Zhou Yu's' moveset, Guan Ping's voice + lines, and Zhang Liao's
-skill tree.
+With all of those things in mind, here's a Peasant with Zhao Yun's Dragon Fang, using Zhou Yu's moveset, Lu Bu's voice + lines, and Zhang Liao's
+skill tree (he started the stage with a Tome). 
 
 ![playing as Peasant](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/DVhKApG.png)
 
+
+##### Steps
+
+1. While at the main menu, or the stage select screen, change one of the addresses above to your desired value
+2. Freeze the value in Cheat Engine by crossing the checkbox to the left of the address name/description. Without this, 
+the value will be changed to the officer you select in the next screen
+3. In the officer selection screen, pick the officer whose weapons + stats you'd like to use
+4. Once you've loaded into the stage preparation screen, check in the 'personal' menu to see if you're using the officer you 
+wanted to use. For peon enemies, their name will be blank.
+5. Load in to the stage
 
 
 
