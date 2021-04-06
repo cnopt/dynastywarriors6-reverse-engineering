@@ -111,6 +111,52 @@ Each officer has a unique `id` - changing this value has some unexpected effects
 | ------	| --------------------
 ``
 
+#### Character Mashing (inc. playing as generic officers)
+
+Probably the most popular/well-known series of hacks throughout all Dynasty Warriors games is the ability to play as generic officers.
+I say this because the same way that I'll describe how to play as generic officers in this title, is almost identical to the steps
+required to play as generic officers in every previous title, all the way back to DW3.
+
+As mentioned above, each officer has an ID. Changing this `id` to a value outside of the playable officer range allows you to use
+any of the hundreds of non-playable officers that appear in various battles throughout the game. As with the previous games, you can also play as
+any of the 'peon' enemies, such as privates, majors, guard captains, catapult officers, archers, etc. There are some caveats, though. Their
+weapon and player portrait will be determined by the officer you choose at the selection screen. Everything else can be swapped around, hence
+why I call this 'mashing'.
+
+* Their voice and lines can be swapped
+* Their moveset can be swapped
+* Their skill tree can be swapped
+
+Meaning that you can essentially create your own ideal officer. Or a really stupid one.
+
+
+##### Current officer id/model/name `0x007756B4`
+
+The value of this address determines the name of the officer you're playing as, and the model. I won't list the entire range here, but
+the valid values seem to go up to near the 500 mark. It seems like after around 300-350 is where they start to go from generic officers
+to the peon enemies. 
+
+
+##### Current officer id/model/name `0x00772EF8`
+
+Changing this address changes both the voice of the officer and therefore their lines when killing an officer, capturing a base, killing X
+enemies etc. I thought it was worth mentioning that this can be independantly changed, since you can get some funny results.
+
+
+##### Current moveset `0x00772F00`
+
+Also independant of the ID/model. This means you can use certain officers' weapons with other officers' movesets, for either good or weird results.
+This moveset value is equivalent to the officer's ID, i.e. if you wanted to use Zhou Yu's moveset, you'd set this to a value of `5`. You'll
+have his moveset, but you'll be using the weapon of the officer you chose in the selecion screen.
+
+
+##### Current skill tree
+
+This doesn't typically have too much bearing on gameplay, especially if you're already using a character with good weapons and stats. 
+A specific case where I found this to be very useful, though, is using the skill tree of officers that have the 'Special Start' ability.
+There's only a few officers that can have this, one example being Zhang Liao. Therefore, changing the value of this address to Zhang Liao's ID 
+allows you to benefit from this skill on any other character. You'll also benefit from his horse abilities too, meaning you can absolutely
+blast through stages on horseback.
 
 
 #### Titles
