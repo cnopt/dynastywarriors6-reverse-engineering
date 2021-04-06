@@ -137,7 +137,7 @@ the valid values seem to go up to near the 500 mark. It seems like after around 
 to the peon enemies. 
 
 
-##### Current officer id/model/name `0x00772EF8`
+##### Current voice/lines `0x00772EF8`
 
 Changing this address changes both the voice of the officer and therefore their lines when killing an officer, capturing a base, killing X
 enemies etc. I thought it was worth mentioning that this can be independantly changed, since you can get some funny results.
@@ -150,13 +150,21 @@ This moveset value is equivalent to the officer's ID, i.e. if you wanted to use 
 have his moveset, but you'll be using the weapon of the officer you chose in the selecion screen.
 
 
-##### Current skill tree
+##### Current skill tree `0x775A0`
 
 This doesn't typically have too much bearing on gameplay, especially if you're already using a character with good weapons and stats. 
 A specific case where I found this to be very useful, though, is using the skill tree of officers that have the 'Special Start' ability.
 There's only a few officers that can have this, one example being Zhang Liao. Therefore, changing the value of this address to Zhang Liao's ID 
 allows you to benefit from this skill on any other character. You'll also benefit from his horse abilities too, meaning you can absolutely
 blast through stages on horseback.
+
+
+With all of those things in mind, here's a Peasant with Zhao Yun's Dragon Fang, using Zhou Yu's' moveset, Guan Ping's voice + lines, and Zhang Liao's
+skill tree.
+
+![playing as Peasant](https://raw.githubusercontent.com/cnopt/DW6-Reverse-Engineering/main/DVhKApG.png)
+
+
 
 
 #### Titles
