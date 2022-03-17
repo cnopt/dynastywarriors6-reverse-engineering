@@ -21,8 +21,18 @@ class Program
         public string officerName { get; set; }
         public int officerId { get; set; }
         public int officerLevel { get; set; }
+        public string officerTitle { get; set; }
         public int officerKills { get; set; }
         public int officerXP { get; set; }
+        public int costume { get; set; }
+        public string weapon1 { get; set; }
+        public string weapon2 { get; set; }
+        public string weapon3 { get; set; }
+        public string weapon4 { get; set; }
+        public string weapon5 { get; set; }
+        public string weapon6 { get; set; }
+        public string weapon7 { get; set; }
+        public string weapon8 { get; set; }
     }
 
 
@@ -414,65 +424,76 @@ class Program
 
                         reader.BaseStream.Seek(idBaseStart + i, SeekOrigin.Begin);
                         reader.Read(test, 0, 4);
-                        Console.WriteLine("officer: " + officersDict[reader.ReadInt32()]);
                         DWOfficerDictionary["DWOfficer" + i].officerName = officersDict[reader.ReadInt32()];
+                        //Console.WriteLine("officer: " + officersDict[reader.ReadInt32()]);
+
 
 
                         reader.BaseStream.Seek(levelBaseStart + i, SeekOrigin.Begin);
                         reader.Read(test, 0, 4);
-                        Console.WriteLine("level: " + reader.ReadInt32());
+                        //Console.WriteLine("level: " + reader.ReadInt32());
                         DWOfficerDictionary["DWOfficer" + i].officerLevel = reader.ReadInt32();
 
                         reader.BaseStream.Seek(xpBaseStart + i, SeekOrigin.Begin);
                         reader.Read(test, 0, 4);
-                        Console.WriteLine("xp: " + reader.ReadInt32());
+                        //Console.WriteLine("xp: " + reader.ReadInt32());
                         DWOfficerDictionary["DWOfficer" + i].officerXP = reader.ReadInt32();
 
                         reader.BaseStream.Seek(killsBaseStart + i, SeekOrigin.Begin);
                         reader.Read(test, 0, 4);
-                        Console.WriteLine("kills: " + reader.ReadInt32());
+                        //Console.WriteLine("kills: " + reader.ReadInt32());
                         DWOfficerDictionary["DWOfficer" + i].officerKills = reader.ReadInt32();
 
 
                         reader.BaseStream.Seek(titleBaseStart + i, SeekOrigin.Begin);
                         reader.Read(test, 0, 4);
-                        Console.WriteLine("title: " + reader.ReadInt32());
+                        //Console.WriteLine("title: " + reader.ReadInt32());
+                        DWOfficerDictionary["DWOfficer" + i].officerTitle = titleMap[reader.ReadInt32()];
 
                         reader.BaseStream.Seek(costumeBaseStart + i, SeekOrigin.Begin);
                         reader.Read(test, 0, 4);
-                        Console.WriteLine("costume: " + reader.ReadInt32());
+                        DWOfficerDictionary["DWOfficer" + i].costume = reader.ReadInt32();
+                        //Console.WriteLine("costume: " + reader.ReadInt32());
 
                         reader.BaseStream.Seek(weapon1BaseStart + i, SeekOrigin.Begin);
                         reader.Read(test, 0, 4);
-                        Console.WriteLine("weapon 1: " + weaponsDict[reader.ReadInt32()]);
+                        DWOfficerDictionary["DWOfficer" + i].weapon1 = weaponsDict[reader.ReadInt32()];
+                        //Console.WriteLine("weapon 1: " + weaponsDict[reader.ReadInt32()]);
 
                         reader.BaseStream.Seek(weapon2BaseStart + i, SeekOrigin.Begin);
                         reader.Read(test, 0, 4);
-                        Console.WriteLine("weapon 2: " + weaponsDict[reader.ReadInt32()]);
+                        DWOfficerDictionary["DWOfficer" + i].weapon2 = weaponsDict[reader.ReadInt32()];
+                        //Console.WriteLine("weapon 2: " + weaponsDict[reader.ReadInt32()]);
 
                         reader.BaseStream.Seek(weapon3BaseStart + i, SeekOrigin.Begin);
                         reader.Read(test, 0, 4);
-                        Console.WriteLine("weapon 3: " + weaponsDict[reader.ReadInt32()]);
+                        DWOfficerDictionary["DWOfficer" + i].weapon3 = weaponsDict[reader.ReadInt32()];
+                        //Console.WriteLine("weapon 3: " + weaponsDict[reader.ReadInt32()]);
 
                         reader.BaseStream.Seek(weapon4BaseStart + i, SeekOrigin.Begin);
                         reader.Read(test, 0, 4);
-                        Console.WriteLine("weapon 4: " + weaponsDict[reader.ReadInt32()]);
+                        DWOfficerDictionary["DWOfficer" + i].weapon4 = weaponsDict[reader.ReadInt32()];
+                        //Console.WriteLine("weapon 4: " + weaponsDict[reader.ReadInt32()]);
 
                         reader.BaseStream.Seek(weapon5BaseStart + i, SeekOrigin.Begin);
                         reader.Read(test, 0, 4);
-                        Console.WriteLine("weapon 5: " + weaponsDict[reader.ReadInt32()]);
+                        DWOfficerDictionary["DWOfficer" + i].weapon5 = weaponsDict[reader.ReadInt32()];
+                        //Console.WriteLine("weapon 5: " + weaponsDict[reader.ReadInt32()]);
 
                         reader.BaseStream.Seek(weapon6BaseStart + i, SeekOrigin.Begin);
                         reader.Read(test, 0, 4);
-                        Console.WriteLine("weapon 6: " + weaponsDict[reader.ReadInt32()]);
+                        DWOfficerDictionary["DWOfficer" + i].weapon6 = weaponsDict[reader.ReadInt32()];
+                        //Console.WriteLine("weapon 6: " + weaponsDict[reader.ReadInt32()]);
 
                         reader.BaseStream.Seek(weapon7BaseStart + i, SeekOrigin.Begin);
                         reader.Read(test, 0, 4);
-                        Console.WriteLine("weapon 7: " + weaponsDict[reader.ReadInt32()]);
+                        DWOfficerDictionary["DWOfficer" + i].weapon7 = weaponsDict[reader.ReadInt32()];
+                        //Console.WriteLine("weapon 7: " + weaponsDict[reader.ReadInt32()]);
 
                         reader.BaseStream.Seek(weapon8BaseStart + i, SeekOrigin.Begin);
                         reader.Read(test, 0, 4);
-                        Console.WriteLine("weapon 8: " + weaponsDict[reader.ReadInt32()]);
+                        DWOfficerDictionary["DWOfficer" + i].weapon8 = weaponsDict[reader.ReadInt32()];
+                        //Console.WriteLine("weapon 8: " + weaponsDict[reader.ReadInt32()]);
 
                         string json = JsonConvert.SerializeObject(DWOfficerDictionary["DWOfficer" + i], Formatting.Indented);
                         Console.WriteLine(json);
