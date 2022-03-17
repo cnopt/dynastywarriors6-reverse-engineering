@@ -479,6 +479,7 @@ class Program
                         DWOfficerDictionary["DWOfficer" + i].weapon1 = new Weapon {
                             weaponName = weaponsDict[readerBuffer],
                             weaponId = readerBuffer,
+                            // ok to call reader.readint on these, i do want the reader to move forward to read next bytes
                             weaponDamageOffset = reader.ReadInt32(),
                             weaponElement = weaponElementMap[reader.ReadInt32()],
                             weaponSkills = reader.ReadInt32()
@@ -491,7 +492,10 @@ class Program
                         DWOfficerDictionary["DWOfficer" + i].weapon2 = new Weapon
                         {
                             weaponName = weaponsDict[readerBuffer],
-                            weaponId = readerBuffer
+                            weaponId = readerBuffer,
+                            weaponDamageOffset = reader.ReadInt32(),
+                            weaponElement = weaponElementMap[reader.ReadInt32()],
+                            weaponSkills = reader.ReadInt32()
                         };
                         //DWOfficerDictionary["DWOfficer" + i].weapon2.weaponName = weaponsDict[reader.ReadInt32()];
                         //Console.WriteLine("weapon 2: " + weaponsDict[reader.ReadInt32()]);
@@ -502,7 +506,10 @@ class Program
                         DWOfficerDictionary["DWOfficer" + i].weapon3 = new Weapon
                         {
                             weaponName = weaponsDict[readerBuffer],
-                            weaponId = readerBuffer
+                            weaponId = readerBuffer,
+                            weaponDamageOffset = reader.ReadInt32(),
+                            weaponElement = weaponElementMap[reader.ReadInt32()],
+                            weaponSkills = reader.ReadInt32()
                         };
                         //DWOfficerDictionary["DWOfficer" + i].weapon3.weaponName = weaponsDict[reader.ReadInt32()];
                         //Console.WriteLine("weapon 3: " + weaponsDict[reader.ReadInt32()]);
@@ -513,7 +520,10 @@ class Program
                         DWOfficerDictionary["DWOfficer" + i].weapon4 = new Weapon
                         {
                             weaponName = weaponsDict[readerBuffer],
-                            weaponId = readerBuffer
+                            weaponId = readerBuffer,
+                            weaponDamageOffset = reader.ReadInt32(),
+                            weaponElement = weaponElementMap[reader.ReadInt32()],
+                            weaponSkills = reader.ReadInt32()
                         };
                         //DWOfficerDictionary["DWOfficer" + i].weapon4.weaponName = weaponsDict[reader.ReadInt32()];
                         //Console.WriteLine("weapon 4: " + weaponsDict[reader.ReadInt32()]);
@@ -524,7 +534,10 @@ class Program
                         DWOfficerDictionary["DWOfficer" + i].weapon5 = new Weapon
                         {
                             weaponName = weaponsDict[readerBuffer],
-                            weaponId = readerBuffer
+                            weaponId = readerBuffer,
+                            weaponDamageOffset = reader.ReadInt32(),
+                            weaponElement = weaponElementMap[reader.ReadInt32()],
+                            weaponSkills = reader.ReadInt32()
                         };
                         //DWOfficerDictionary["DWOfficer" + i].weapon5.weaponName = weaponsDict[reader.ReadInt32()];
                         //Console.WriteLine("weapon 5: " + weaponsDict[reader.ReadInt32()]);
@@ -535,7 +548,10 @@ class Program
                         DWOfficerDictionary["DWOfficer" + i].weapon6 = new Weapon
                         {
                             weaponName = weaponsDict[readerBuffer],
-                            weaponId = readerBuffer
+                            weaponId = readerBuffer,
+                            weaponDamageOffset = reader.ReadInt32(),
+                            weaponElement = weaponElementMap[reader.ReadInt32()],
+                            weaponSkills = reader.ReadInt32()
                         };
                         //DWOfficerDictionary["DWOfficer" + i].weapon6.weaponName = weaponsDict[reader.ReadInt32()];
                         //Console.WriteLine("weapon 6: " + weaponsDict[reader.ReadInt32()]);
@@ -546,7 +562,10 @@ class Program
                         DWOfficerDictionary["DWOfficer" + i].weapon7 = new Weapon
                         {
                             weaponName = weaponsDict[readerBuffer],
-                            weaponId = readerBuffer
+                            weaponId = readerBuffer,
+                            weaponDamageOffset = reader.ReadInt32(),
+                            weaponElement = weaponElementMap[reader.ReadInt32()],
+                            weaponSkills = reader.ReadInt32()
                         };
                         //DWOfficerDictionary["DWOfficer" + i].weapon7.weaponName = weaponsDict[reader.ReadInt32()];
                         //Console.WriteLine("weapon 7: " + weaponsDict[reader.ReadInt32()]);
@@ -557,7 +576,10 @@ class Program
                         DWOfficerDictionary["DWOfficer" + i].weapon8 = new Weapon
                         {
                             weaponName = weaponsDict[readerBuffer],
-                            weaponId = readerBuffer
+                            weaponId = readerBuffer,
+                            weaponDamageOffset = reader.ReadInt32(),
+                            weaponElement = weaponElementMap[reader.ReadInt32()],
+                            weaponSkills = reader.ReadInt32()
                         };
                         //DWOfficerDictionary["DWOfficer" + i].weapon8.weaponName = weaponsDict[reader.ReadInt32()];
                         //Console.WriteLine("weapon 8: " + weaponsDict[reader.ReadInt32()]);
