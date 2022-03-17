@@ -417,6 +417,8 @@ class Program
                     int weapon7BaseStart = 3004;
                     int weapon8BaseStart = 3020;
 
+                    int readerBuffer;
+
                     for (int i = 0; i < 6888; i++)
                     {
 
@@ -461,11 +463,14 @@ class Program
 
                         reader.BaseStream.Seek(weapon1BaseStart + i, SeekOrigin.Begin);
                         reader.Read(test, 0, 4);
+                        // use temporary reader.readerint because calling reader.readerint causes the 
+                        // buffer to move forward, so ONLY CALL THIS ONCE PER FUNCTION
+                        readerBuffer = reader.ReadInt32();
                         DWOfficerDictionary["DWOfficer" + i].weapon1 = new Weapon {
-                            weaponName = weaponsDict[reader.ReadInt32()],
-                            weaponId = reader.ReadInt32()
+                            weaponName = weaponsDict[readerBuffer],
+                            weaponId = readerBuffer
                         };
-                        //Console.WriteLine("weapon 1: " + weaponsDict[reader.ReadInt32()]);
+
 
                         reader.BaseStream.Seek(weapon2BaseStart + i, SeekOrigin.Begin);
                         reader.Read(test, 0, 4);
